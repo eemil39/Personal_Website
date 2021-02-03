@@ -1,0 +1,42 @@
+.Button{
+    background-color: rgb(48, 48, 48);
+    border: none;
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    height: 45;
+}
+.Button:hover{
+    background-color: rgb(189, 129, 74);
+}
+.NavigationButton{
+    text-decoration: none;
+    background-color: rgb(48, 48, 48);
+    border: none;
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-radius: 1px;
+    height: 45;
+
+}
+
+.NavigationButton:hover{
+    background-color: rgb(189, 129, 74);
+}
+
+.Button:active{
+   
+    opacity: 0.5;
+}
+

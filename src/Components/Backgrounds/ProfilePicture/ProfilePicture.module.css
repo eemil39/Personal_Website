@@ -1,0 +1,12 @@
+.ProfilePicture {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+}
+
+.ProfilePicture img{
+    display: block;
+    width: 100%;
+}

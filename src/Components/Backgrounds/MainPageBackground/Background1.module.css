@@ -1,0 +1,14 @@
+.Background {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+
+.Background img{
+    display: block;
+    width: 100%;
+}

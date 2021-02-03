@@ -1,0 +1,12 @@
+.Background {
+    display: inline-block;
+    position: relative;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.Background img{
+    display: block;
+    width: 100%;
+}

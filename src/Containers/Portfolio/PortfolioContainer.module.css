@@ -1,0 +1,344 @@
+
+@media (min-width: 1100px) {
+    h1 {
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 100px;
+        font-weight: 200;
+        padding-left: 200px;
+        text-align: start;
+    }
+    
+    p {
+        text-align: start;
+        padding-left: 70px;
+        padding-right: 30px;
+    }
+    .Button{
+        position: absolute;
+        margin-left: 70px;
+        margin-right: auto;
+        bottom: 50px;
+    }
+
+    .MainPagePicture {
+        margin-top: 0;
+    }
+
+.MainInfo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 90%;
+    background-color: rgb(56, 56, 56);
+    height: auto;
+    position: relative;
+    display: grid;
+}
+.MainInfoBox{
+    width: auto;
+    height: auto;
+}
+
+.MainInfoBox p {
+    margin: 0;
+    padding-left: 70px;
+    margin-top: 16px;
+    margin-bottom: 70px;
+    font-size: 18px;
+    color: rgb(204, 204, 204);
+}
+
+.MainInfoBox h3 {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: start;
+    padding-left: 70px;
+    color: rgb(204, 204, 204);
+}
+
+
+.EducationInfo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 90%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 410px calc((100vw * 0.9 - 410px - (0.06* 100vw * 0.9)));
+    grid-template-rows: 395px 400px;
+    grid-gap: 6%;
+}
+
+.EducationInfo .EducationInfoBox {
+    background-color: rgb(185, 180, 176);
+    width: 100%;
+    height: 400px;
+    opacity: 0.9;
+    grid-column: 2;
+    grid-row: 1;
+}
+.EducationInfo .EducationInfoBox a{
+    position: absolute;
+    bottom: 430px;
+    left: 580px;
+}
+
+
+
+.EducationInfo .EducationInfoBox h2{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: start;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-left: 70px;
+}
+.EducationInfo .eductionPicture{
+    grid-row: 1/2;
+    grid-column: 1;
+}
+
+.ExperienceInfoBox {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgb(185, 180, 176);
+    width: 100%;
+    opacity: 0.9;
+}
+.ExperienceInfoBox h2{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: start;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-left: 70px;
+}
+.ExperienceInfoBox a{
+    position: absolute;
+    bottom: 0;
+    left: 580px;
+}
+.SkillsInfo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 90%;
+    height: 400px;
+    position: relative;
+    display: grid;
+    grid-template-columns: calc((100vw * 0.9 - 533px - (0.06* 100vw * 0.9))) 533px;
+    grid-gap: 6%;
+}
+
+.SkillsInfo .SkillsInfoBox {
+    background-color: rgb(185, 180, 176);
+    width: 100%;
+    height: 400px;
+    opacity: 0.9;
+}
+.SkillsInfo .SkillsInfoBox h2{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: start;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-left: 70px;
+}
+.HobbiesInfo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 90%;
+    height: 400px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 728px calc((100vw * 0.9 - 728px - (0.06* 100vw * 0.9)));
+    grid-gap: 6%;
+}
+
+.HobbiesInfo .HobbiesInfoBox {
+    background-color: rgb(185, 180, 176);
+    width: 100%;
+    height: 400px;
+    opacity: 0.9;
+}
+.HobbiesInfo .HobbiesInfoBox h2{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: start;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-left: 70px;
+}
+}
+
+@media (max-width: 1099px){
+
+    h1 {
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 100px;
+        font-weight: 200;
+        text-align: center;
+        margin-top: auto;
+    }
+    
+    p {
+        text-align: start;
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+    .Button{
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .PictureBackground {
+        background-color: rgb(185, 180, 176);
+        box-sizing: border-box;
+    }
+
+    .MainPagePicture {
+        margin-top: 50px;
+    }
+    
+
+.MainInfo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 70%;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.MainInfo .MainInfoBox {
+    background-color: rgb(185, 180, 176);
+    height: auto;
+    opacity: 0.9;
+}
+.MainInfo .MainInfoBox h3{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: start;
+    padding-left: 50px;
+}
+
+.EducationInfo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 70%;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.EducationInfo .EducationInfoBox {
+    background-color: rgb(185, 180, 176);
+    height: auto;
+    opacity: 0.9;
+}
+
+
+
+.EducationInfo .EducationInfoBox h2{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+}
+
+.ExperienceInfo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 70%;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.ExperienceInfo .ExperienceInfoBox {
+    background-color: rgb(185, 180, 176);
+    width: 100%;
+    opacity: 0.9;
+}
+.ExperienceInfo .ExperienceInfoBox h2{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+.SkillsInfo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 70%;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.SkillsInfo .SkillsInfoBox {
+    background-color: rgb(185, 180, 176);
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+.SkillsInfo .SkillsInfoBox h2{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+.HobbiesInfo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 70%;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.HobbiesInfo .HobbiesInfoBox {
+    background-color: rgb(185, 180, 176);
+    width: 100%;
+    opacity: 0.9;
+}
+.HobbiesInfo .HobbiesInfoBox h2{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+}
+}

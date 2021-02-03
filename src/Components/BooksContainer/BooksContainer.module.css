@@ -1,0 +1,36 @@
+@media (min-width: 1100px) {
+    .wrapper{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(211, 211, 211);    
+        width: 80%;
+        overflow-y: scroll;
+        height: 500px;
+    }
+
+    .booksContainer{
+        margin: 0;
+        padding: 50px;
+        width: 90%;
+        height: 293px;
+        position: relative;
+        display: grid;
+        grid-template-columns: calc(100vw * 0.8 * 0.9 - 200px) 200px;
+    }
+    .booksContainer .booksContainerInfo{
+        height: auto;
+    }
+
+    .booksContainer .booksContainerInfo h2{
+        text-align: start;
+        padding-left: 16px;
+        font-size: 24px;
+    }
+    .booksContainer .booksContainerInfo p{
+        text-align: start;
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+}
