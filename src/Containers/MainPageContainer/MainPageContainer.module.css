@@ -20,11 +20,73 @@
         bottom: 70px;
     }
 
+.NameContainer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 90%;
+    height: auto;
+    display: grid;
+    background-color: rgb(44, 41, 54);
+    animation: fall ease 2s;
+}
+
+@keyframes fall {
+    0%      { transform: scale(1, 1) translatey(-1000%);}
+    70%      { transform: scale(1, 1) translatey(-1000%);}
+    74%      { transform: scale(1, 1) translatey(-1%);}
+    75%     { transform: scale(1.05, 0.95) translatey(0);}
+    85%     { transform: scale(0.98, 1.02) translatey(-10%);}
+    90%    { transform: scale(1, 1) translatey(0);}
+    100%    { transform: scale(1, 1) translatey(0);}
+  }
+@keyframes fall_1 {
+    0% { 
+        transform: translatey(-1000%);
+    }
+    60% { 
+        transform: translatey(-1000%);
+    }
+    90% { 
+        transform: translatey(10%);
+    }
+    100% {
+        transform: translatey(0);
+    }
+  }
+
+@keyframes crash {
+    0% { 
+        transform: translatex(1000%);
+    }
+    80% {
+        transform: translatex(1000%);
+    }
+    90% {
+        transform: translatex(-10%);
+    }
+    95% {
+        transform: translatex(5%);
+    }
+    100% {
+        transform: translatex(0);
+    }
+  }
+  
+
+.NameContainer h1{
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
 .MainInfo {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     width: 90%;
     height: 400px;
     position: relative;
@@ -37,6 +99,7 @@
     background-color: rgb(185, 180, 176);
     height: 400px;
     opacity: 0.9;
+    animation: fall_1 1s;
 }
 .MainInfo .MainInfoBox h3{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -45,13 +108,16 @@
     text-align: start;
     padding-left: 70px;
 }
+.MainInfo .ProfilePicture{
+    animation: crash 1.2s;
+}
 
-.EducationInfo {
+.PortfolioInfo {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     width: 90%;
     height: 400px;
     position: relative;
@@ -60,7 +126,7 @@
     grid-gap: 6%;
 }
 
-.EducationInfo .EducationInfoBox {
+.PortfolioInfo .PortfolioInfoBox {
     background-color: rgb(185, 180, 176);
     width: 100%;
     height: 400px;
@@ -69,7 +135,7 @@
 
 
 
-.EducationInfo .EducationInfoBox h2{
+.PortfolioInfo .PortfolioInfoBox h2{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     font-weight: 500;
@@ -82,8 +148,8 @@
 .ExperienceInfo {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     width: 90%;
     height: 400px;
     position: relative;
@@ -110,8 +176,8 @@
 .SkillsInfo {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     width: 90%;
     height: 400px;
     position: relative;
@@ -138,7 +204,7 @@
 .HobbiesInfo {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 100px;
     width: 90%;
     height: 400px;

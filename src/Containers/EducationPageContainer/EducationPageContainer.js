@@ -5,6 +5,7 @@ import Uva from '../../Components/Backgrounds/Education/Uva';
 import Spsu from '../../Components/Backgrounds/Education/Spsu';
 
 class EducationPageContainer extends Component{
+    
     componentDidMount() {
         window.scrollTo(0, 0)
       }

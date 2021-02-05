@@ -38,9 +38,7 @@ class PortfolioContainer extends Component{
                     <div className={classes.EducationInfoBox}>
                         <h2>Koulutus</h2>
                             <p>
-                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
-                            looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                                
                             </p>
                                 <NavigationButton link="/education">Lue lisää</NavigationButton>
                             <div className={classes.Button}>
@@ -49,8 +47,7 @@ class PortfolioContainer extends Component{
                     <div className={classes.ExperienceInfoBox}>
                         <h2>Työkokemus</h2>
                             <p>
-                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                                from 45 BC, making it over 2000 years old.
+                                
                             </p>
                                 <NavigationButton link="/experience">Lue lisää</NavigationButton>
                             <div className={classes.Button}>
@@ -66,8 +63,7 @@ class PortfolioContainer extends Component{
                     <div className={classes.SkillsInfoBox}>
                         <h2>Osaaminen</h2>
                             <p>
-                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                                from 45 BC, making it over 2000 years old.
+                                
                             </p>
                             <div className={classes.Button}>
                                 <NavigationButton link="/skills">Lue lisää</NavigationButton>
@@ -84,8 +80,7 @@ class PortfolioContainer extends Component{
                     <div className={classes.HobbiesInfoBox}>
                         <h2>Harrastukset</h2>
                             <p>
-                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                                from 45 BC, making it over 2000 years old.
+                                
                             </p>
                             <div className={classes.Button}>
                                 <NavigationButton link="/freetime">Lue lisää</NavigationButton>

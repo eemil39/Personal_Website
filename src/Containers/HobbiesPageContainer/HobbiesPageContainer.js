@@ -91,7 +91,8 @@ class HobbiesPageContainer extends Component{
                     <div className={classes.hobbiesInfoBox}>
                         <h3>Shakki</h3>
                         <p>
-                                
+                            Mielenkiintoinen peli jota tulee pelattua aina silloin tällöin. Pelaamiseen ei tarvitse edes pelikaveria, sillä chess.com
+                            sovellus on erittäin suosittu ja vastustajien kirjo on loputon.
                         </p>
                     </div>
                 </div>

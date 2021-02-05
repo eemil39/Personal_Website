@@ -9,6 +9,7 @@ import EducationPicture from '../../Components/Backgrounds/Education/EducationPi
 import Contacts from '../../Components/Backgrounds/MainPageBackground/Contact';
 import Software from '../../Components/Backgrounds/MainPageBackground/Software';
 
+
 class MainPageContainer extends Component{
     componentDidMount() {
         window.scrollTo(0, 0)
@@ -28,7 +29,9 @@ class MainPageContainer extends Component{
     render() {
         return(
             <div>
-                <h1>Eemil Vähä</h1>
+                <div className={classes.NameContainer}>
+                    <h1>Eemil Vähä</h1>
+                </div>
 
                 <div className={classes.MainInfo}>
                     <div className={classes.MainInfoBox}>
@@ -37,23 +40,22 @@ class MainPageContainer extends Component{
                             Olen {this.getAge("1997-05-27")}-vuotias automaatio ja tietotekniikan opisklija.
                         </p>
                     </div>
-                    <div>
+                    <div className={classes.ProfilePicture}>
                         <ProfilePicture/>
                     </div>
                 </div>
                 <div className={classes.MainPagePicture}>
                     <MainPagePicture/>
                 </div>
-                <div className={classes.EducationInfo}>
+                <div className={classes.PortfolioInfo}>
                             <div className={classes.PictureBackground}>
                                 <EducationPicture/>
                             </div>
-                    <div className={classes.EducationInfoBox}>
-                        <h2>Ansioluettelo</h2>
+                    <div className={classes.PortfolioInfoBox}>
+                        <h2>Portfolio</h2>
                             <p>
-                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                                from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
-                                looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                                Portfolio välilehdeltä löydät tietoa koulutuksestani, työkokemuksestani, osaamisestani sekä harrastuksistani. Nämä kaikki 
+                                tiedot löytyvät myös ansioluettelostani, mutta koin tarpeelliseksi kertoa hieman enemmän itsestäni, joten loin tämän sivun.
                             </p>
                             <div className={classes.Button}>
                                 <NavigationButton link="/curriculum-vitae">Lue lisää</NavigationButton>
@@ -64,8 +66,7 @@ class MainPageContainer extends Component{
                     <div className={classes.ExperienceInfoBox}>
                         <h2>Ohjelmointi projektit</h2>
                             <p>
-                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                                from 45 BC, making it over 2000 years old.
+                                Kerron omista ohjelmointi projekteistani, jotka ovat mainitsemisen arvoisia.  
                             </p>
                             <div className={classes.Button}>
                                 <NavigationButton link="/projects">Lue lisää</NavigationButton>
@@ -82,11 +83,11 @@ class MainPageContainer extends Component{
                     <div className={classes.SkillsInfoBox}>
                         <h2>Ota yhteyttä</h2>
                             <p>
-                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                                from 45 BC, making it over 2000 years old.
+                                Jos sinulla on jotain kysyttävää ja arvelet, että minulla voisi olla vastaus siihen, otathan rohkeasti yhteyttä. 
+                                Löydät yhteistietoni, yhteistiedot välilehdeltä.
                             </p>
                             <div className={classes.Button}>
-                                <NavigationButton link="/yhteistiedot">Lue lisää</NavigationButton>
+                                <NavigationButton link="/yhteistiedot">Yhteistietoihin</NavigationButton>
                             </div>
                     </div>
                 </div>

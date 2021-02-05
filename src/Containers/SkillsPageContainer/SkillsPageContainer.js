@@ -85,7 +85,7 @@ class SkillsPageContainer extends Component{
                     <div className={classes.skillsInfoBox}>
                         <h5>React.js</h5>
                         <h5>JavaScript</h5>
-                        <h5>CSS/CSS3</h5>
+                        <h5>CSS</h5>
                         <h5>Html5</h5>
                         <h5>Java</h5>
                         <h5>C</h5>

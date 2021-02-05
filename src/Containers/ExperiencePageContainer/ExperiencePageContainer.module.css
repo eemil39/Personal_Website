@@ -32,12 +32,16 @@
         width: 90%;
         position: relative;
         display: grid;
-        grid-template-columns: calc((0.9 * 100vw - 600px) * 0.5) calc((0.9 * 100vw - 600px) * 0.5) 600px;
+        grid-template-columns: calc((0.9 * 100vw - 600px))  600px;
         grid-template-rows: 338px;
+    }
+    .experienceInfo .experienceInfoLink{
+        width: 300px;
     }
 
     .experienceInfo .experienceInfoBox {
         height: auto;
+        background-color: rgb(189, 189, 189);
     }
 
     .experienceInfo .experienceInfoBox p{
@@ -57,6 +61,7 @@
         padding-right: 50px;
     }
     .experienceInfo .experienceInfoBox a{
+        text-align: start;
         text-decoration: none;
         color: black;
     }
@@ -91,23 +96,6 @@
     }
     .experienceInfo .experienceInfoBox2 a:hover{
         color: rgb(189, 129, 74);
-    }
-
-    .experienceInfo .experienceInfo{
-        width: 100%;
-    }
-
-    .experienceInfo .experienceInfoBox{
-        width: 100%;
-    }
-
-    .experienceInfo .experienceInfoYear {
-        background-color: rgb(226, 226, 226);
-    }
-    .experienceInfo .experienceInfoYear p {
-        padding-top: 40px;
-        background-color: rgb(226, 226, 226);
-        padding-left: 40px;
     }
 
 }
