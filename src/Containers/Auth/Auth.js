@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import { Redirect } from 'react-router-dom';
 import classes from './Auth.module.css';
 import Input from '../../UI/Input/Input';
 import Button from '../../UI/Buttons/Button';
@@ -41,7 +42,7 @@ class Auth extends Component{
                 touched: false
             }
         },
-        isSignup: true
+        isSignup: false
     }
 
     inputChangedHandler = (event, controlName) => {
@@ -93,8 +94,8 @@ class Auth extends Component{
                 changed={(event) => this.inputChangedHandler(event, formElement.id)}/>
         ));
 
-        if (this.props.loading) {
-            form = <Spinner/>;
+        if (this.props.auth) {
+            form = <Redirect to="/"/>;
         }
 
         let errorMessage = null;
@@ -112,9 +113,9 @@ class Auth extends Component{
                     {form}
                 <Button>Kirjaudu sisään</Button>
                 </form>
-                <Button 
+{/*                 <Button 
                 click={this.switchAuthModeHandler}
-                btnType="Danger">Switch to {this.state.isSignup ? 'Kirjaudu sisään' : 'Rekisteröidy'}</Button>
+                btnType="Danger">Switch to {this.state.isSignup ? 'Kirjaudu sisään' : 'Rekisteröidy'}</Button> */}
             </div>
 
         );
@@ -123,7 +124,8 @@ class Auth extends Component{
 const mapStateToProps = state => {
     return {
         loading: state.auth.loading,
-        error: state.auth.error
+        error: state.auth.error,
+        auth: state.auth.token !== null
     }
 }
 

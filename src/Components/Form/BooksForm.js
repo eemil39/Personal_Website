@@ -5,6 +5,7 @@ import Input from '../../UI/Input/Input';
 import Button from '../../UI/Buttons/Button';
 import axios from '../../axios-books';
 import { updateObject, checkValiditation } from '../../shared/uitility';
+import { connect } from 'react-redux';
 
 
 class BooksForm extends Component {
@@ -105,13 +106,13 @@ class BooksForm extends Component {
         
     }
 
-    SaveBookToFireBase = (event) => {
+    SaveBookToFireBase = (event, token) => {
         event.preventDefault();
         const formData = {};
         for (let formElementIndentifier in this.state.booksForm) {
             formData[formElementIndentifier] = this.state.booksForm[formElementIndentifier].value;
         }
-        axios.post('/books.json', formData)
+        axios.post('/books.json?auth=' + this.props.token , formData)
         .then(res => console.log(res))
         .catch(err => console.log(err));
     } 
@@ -150,4 +151,16 @@ class BooksForm extends Component {
     }
 }
 
-export default BooksForm;
+const mapStateToProps = state => {
+    return {
+        token: state.auth.token,
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BooksForm);

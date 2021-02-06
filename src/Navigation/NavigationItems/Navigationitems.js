@@ -8,6 +8,10 @@ const navigationItems = (props) => (
         <NavigationItem link="/"  exact>Etusivu</NavigationItem>
         <NavigationItem link="/curriculum-vitae">Portfolio</NavigationItem>
         <NavigationItem link="/yhteistiedot">Yhteistiedot</NavigationItem>
+        { props.isAuthenticated 
+            ? <NavigationItem link="/logout">Kirjaudu ulos</NavigationItem>
+            : <div></div>}
+
     </ul>
 );
 

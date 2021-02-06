@@ -7,7 +7,7 @@ import NavigationButton from '../../UI/Buttons/NavigationButton';
 import Skills from '../../Components/Backgrounds/Education/Skills';
 import Uwasa2 from '../../Components/Backgrounds/Education/Uwasa2';
 import Hobbies from '../../Components/Backgrounds/Education/Hobbies';
-import Books from '../../Components/Backgrounds/Education/Books';
+
 
 class PortfolioContainer extends Component{
     componentDidMount() {

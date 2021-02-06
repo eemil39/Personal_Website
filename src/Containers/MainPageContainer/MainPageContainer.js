@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import classes from './MainPageContainer.module.css';
-import { Parallax, ParallaxLayer } from 'react-scroll-parallax';
 
 import MainPagePicture from '../../Components/Backgrounds/MainPageBackground/Background1';
 import NavigationButton from '../../UI/Buttons/NavigationButton';
@@ -45,11 +44,9 @@ class MainPageContainer extends Component{
                         <ProfilePicture/>
                     </div>
                 </div>
-                <div className={classes.box1}></div>
                 <div className={classes.MainPagePicture}>
                         <MainPagePicture/>
                 </div>
-                <div className={classes.box2}></div>
                 <div className={classes.PortfolioInfo}>
                             <div className={classes.PictureBackground}>
                                 <EducationPicture/>
