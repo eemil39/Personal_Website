@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classes from './App.module.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Layout from './hoc/Layout/Layout';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 import MainPageContainer from './Containers/MainPageContainer/MainPageContainer';
 import EducationPage from './Containers/EducationPageContainer/EducationPageContainer';
@@ -11,6 +12,7 @@ import SkillsPage from './Containers/SkillsPageContainer/SkillsPageContainer';
 import ProjectPage from './Containers/ProjectsPageContainer/ProjectsPageContainer';
 import Portfolio from './Containers/Portfolio/PortfolioContainer';
 import ContactPage from './Containers/Contact/ContactPageContainer';
+import Auth from './Containers/Auth/Auth';
 
 import Twitter from './Assets/png/png2/001-twitter.png';
 import Facebook from './Assets/png/png2/002-facebook.png';
@@ -32,6 +34,7 @@ class App extends Component {
           <Route path="/experience" component={ExperiencePage} />
           <Route path="/skills" component={SkillsPage} />
           <Route path="/projects" component={ProjectPage} />
+          <Route path="/admin" component={Auth} />
           <Route path="/" exact component={MainPageContainer}/>
         </Switch>
     )
@@ -40,11 +43,13 @@ class App extends Component {
     return (
       <div className={classes.wrapper}>
             <div className={classes.pagewrapper}>
+            <ParallaxProvider>
             <BrowserRouter>
               <Layout>
                   {routes} 
               </Layout> 
             </BrowserRouter>
+            </ParallaxProvider>
           </div>
             <div className={classes.footer}>
               <div className={classes.inner_footer}>

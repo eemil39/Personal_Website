@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import classes from './MainPageContainer.module.css';
+import { Parallax, ParallaxLayer } from 'react-scroll-parallax';
 
 import MainPagePicture from '../../Components/Backgrounds/MainPageBackground/Background1';
 import NavigationButton from '../../UI/Buttons/NavigationButton';
@@ -44,9 +45,11 @@ class MainPageContainer extends Component{
                         <ProfilePicture/>
                     </div>
                 </div>
+                <div className={classes.box1}></div>
                 <div className={classes.MainPagePicture}>
-                    <MainPagePicture/>
+                        <MainPagePicture/>
                 </div>
+                <div className={classes.box2}></div>
                 <div className={classes.PortfolioInfo}>
                             <div className={classes.PictureBackground}>
                                 <EducationPicture/>
@@ -62,8 +65,8 @@ class MainPageContainer extends Component{
                             </div>
                     </div>
                 </div>
-                <div className={classes.ExperienceInfo}>
-                    <div className={classes.ExperienceInfoBox}>
+                <div className={classes.ProjectsInfo}>
+                    <div className={classes.ProjectsInfoBox}>
                         <h2>Ohjelmointi projektit</h2>
                             <p>
                                 Kerron omista ohjelmointi projekteistani, jotka ovat mainitsemisen arvoisia.  
@@ -76,11 +79,11 @@ class MainPageContainer extends Component{
                         <Software/>
                     </div>
                 </div>
-                <div className={classes.SkillsInfo}>
+                <div className={classes.ContactInfo}>
                     <div className={classes.PictureBackground}>
                         <Contacts/>
                     </div>
-                    <div className={classes.SkillsInfoBox}>
+                    <div className={classes.ContactInfoBox}>
                         <h2>Ota yhteyttä</h2>
                             <p>
                                 Jos sinulla on jotain kysyttävää ja arvelet, että minulla voisi olla vastaus siihen, otathan rohkeasti yhteyttä. 

@@ -15,7 +15,7 @@ class BooksForm extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'Title'
+                    placeholder: 'Kirjan nimi'
                 },
                 value: '',
                 validation: {
@@ -29,7 +29,7 @@ class BooksForm extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'Author'
+                    placeholder: 'Kirjailija'
                 },
                 value: '',
                 validation: {
@@ -43,7 +43,7 @@ class BooksForm extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'Publishyear'
+                    placeholder: 'Julkaisuvuosi'
                 },
                 value: '',
                 validation: {
@@ -57,7 +57,7 @@ class BooksForm extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'When did you finish reading?'
+                    placeholder: 'Luettu (pvm)'
                 },
                 value: '',
                 validation: {
@@ -71,7 +71,7 @@ class BooksForm extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'Comment'
+                    placeholder: 'Kommentti'
                 },
                 value: '',
                 validation: {

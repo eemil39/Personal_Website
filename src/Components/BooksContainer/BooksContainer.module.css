@@ -8,6 +8,7 @@
         width: 80%;
         overflow-y: scroll;
         height: 500px;
+        box-shadow: 0 0 3px #ccc;
     }
 
     .booksContainer{
