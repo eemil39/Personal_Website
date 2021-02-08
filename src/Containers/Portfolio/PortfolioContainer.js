@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import classes from './PortfolioContainer.module.css';
 
-import MainPagePicture from '../../Components/Backgrounds/MainPageBackground/Background2';
+import MainPagePicture from '../../Components/Backgrounds/MainPageBackground/Background1';
 import NavigationButton from '../../UI/Buttons/NavigationButton';
 import Skills from '../../Components/Backgrounds/Education/Skills';
 import Uwasa2 from '../../Components/Backgrounds/Education/Uwasa2';
@@ -20,7 +20,9 @@ class PortfolioContainer extends Component{
                 <div className={classes.MainPagePicture}>
                     <MainPagePicture/>
                 </div>
-                <h1>Portfolio</h1>
+                <div className={classes.titleContainer}>
+                    <h1>Portfolio</h1>
+                </div>
                 <div className={classes.MainInfo}>
                     <div className={classes.MainInfoBox}>
                     <h3>Hei!</h3>
@@ -30,7 +32,7 @@ class PortfolioContainer extends Component{
                     </p>
                     </div>
                 </div>
-
+                <div className={classes.wrapper}>
                 <div className={classes.EducationInfo}>
                             <div className={classes.educationPicture}>
                                 <Uwasa2/>
@@ -54,11 +56,6 @@ class PortfolioContainer extends Component{
                             </div>
                     </div>
                 </div>
-             {/*    <div className={classes.ExperienceInfo}>
-                    <div className={classes.PictureBackground}>
-                      <Plant/>
-                    </div>
-                </div> */}
                 <div className={classes.SkillsInfo}>
                     <div className={classes.SkillsInfoBox}>
                         <h2>Osaaminen</h2>
@@ -87,7 +84,7 @@ class PortfolioContainer extends Component{
                             </div>
                     </div>
                 </div>
-
+                </div>
             </div>
         );
     }

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Background from '../../../Assets/Images/Experience.jpg'; 
-import classes from './Experience.module.css';
+import Background from '../../../Assets/Images/Kortti1.jpg'; 
+import classes from './Logo.module.css';
 
 const background = (props) => (
     <div className={classes.Background}>

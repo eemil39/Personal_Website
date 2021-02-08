@@ -7,11 +7,12 @@
 }
 
 .NavigationItem a {
-    color: #376b9c;
+    color: #000000;
     text-decoration: none;
     width: 100%;
     box-sizing: border-box;
     display: block;
+    font-size: 25px;
 }
 
 .NavigationItem a:hover,
@@ -61,5 +62,9 @@
     .NavigationItem:nth-of-type(3) {
         
         margin-right:auto;
+    }
+    .NavigationItem:nth-of-type(5) {
+        
+        margin-right:16px;
     }
 }

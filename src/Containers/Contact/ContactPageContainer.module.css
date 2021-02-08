@@ -52,3 +52,123 @@
     }
 
 }
+
+@media (max-width: 1099px) {
+    .contactBox{
+        display: none;
+    }
+    .icon {
+        padding-top: 16px;
+        padding-bottom: 5px;
+    }
+
+    .contactBoxContianerMobile{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+
+    .contactBoxContianerMobile .contactBoxName{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto auto;
+    }
+    .contactBoxContianerMobile .contactBoxName h2{
+        padding: 0;
+        margin: 0;
+        text-align: start;
+        grid-column: 2;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+    .contactBoxContianerMobile .contactBoxName h3{
+        padding: 0;
+        margin: 0;
+        text-align: start;
+        grid-column: 2;
+        font-weight: 100;
+        padding-top: 10px;
+    }
+    .contactBoxContianerMobile .contactBoxName .icon{
+        padding: 0;
+        margin: 0;
+        padding-top: 10px;
+    }
+    .contactBoxContianerMobile .contactBoxEmail{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto auto;
+    }
+    .contactBoxContianerMobile .contactBoxEmail h2{
+        padding: 0;
+        margin: 0;
+        text-align: start;
+        grid-column: 2;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+    .contactBoxContianerMobile .contactBoxEmail h3{
+        padding: 0;
+        margin: 0;
+        text-align: start;
+        grid-column: 2;
+        font-weight: 100;
+        padding-top: 10px;
+    }
+    .contactBoxContianerMobile .contactBoxEmail .icon{
+        padding: 0;
+        margin: 0;
+        padding-top: 10px;
+    }
+    .contactBoxContianerMobile .contactBoxPhone{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto auto;
+    }
+    .contactBoxContianerMobile .contactBoxPhone h2{
+        padding: 0;
+        margin: 0;
+        text-align: start;
+        grid-column: 2;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+    .contactBoxContianerMobile .contactBoxPhone h3{
+        padding: 0;
+        margin: 0;
+        text-align: start;
+        grid-column: 2;
+        font-weight: 100;
+        padding-top: 10px;
+    }
+    .contactBoxContianerMobile .contactBoxPhone .icon{
+        padding: 0;
+        margin: 0;
+        padding-top: 10px;
+    }
+
+
+    .emailBox{
+        padding: 50px;
+    }
+    .emailBox .emailLink a{
+        background-color: rgb(48, 48, 48);
+        text-decoration: none;
+        border: none;
+        color: rgb(255, 255, 255);
+        outline: none;
+        cursor: pointer;
+        font: inherit;
+        padding: 10px;
+        font-weight: bold;
+        height: 45;
+    }
+    .emailBox .emailLink a:hover{
+        background-color: rgb(110, 179, 122);
+    }
+
+}

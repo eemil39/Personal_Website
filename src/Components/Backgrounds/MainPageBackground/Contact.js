@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Background from '../../../Assets/Images/Yhteistiedot.JPG'; 
-import classes from './Contact.module.css';
+import Background from '../../../Assets/Images/Yhteistiedot.jpg'; 
+import classes from './General.module.css';
 
 const background = (props) => (
     <div className={classes.Background}>

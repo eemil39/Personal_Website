@@ -5,6 +5,7 @@ import NavigationItem from './NavigationItem/NavigationItem';
 
 const navigationItems = (props) => (
     <ul className={classes.NavigationItems}>
+        { props.isAuthenticated ? <NavigationItem link="/logout"></NavigationItem> : <div></div>}
         <NavigationItem link="/"  exact>Etusivu</NavigationItem>
         <NavigationItem link="/curriculum-vitae">Portfolio</NavigationItem>
         <NavigationItem link="/yhteistiedot">Yhteistiedot</NavigationItem>

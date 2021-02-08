@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import classes from './EducationPageContainer.module.css';
 import Uva from '../../Components/Backgrounds/Education/Uva';
 import Spsu from '../../Components/Backgrounds/Education/Spsu';
+import Kortti from '../../Components/Backgrounds/Education/Kortti';
+import Kortti1 from '../../Components/Backgrounds/Education/Kortti1';
+import Kortti2 from '../../Components/Backgrounds/Education/Kortti2';
 
 class EducationPageContainer extends Component{
     
@@ -12,7 +15,7 @@ class EducationPageContainer extends Component{
     
     render() {
         return(
-            <div>
+            <div className={classes.wrapper}>
                 <h1>Koulutus</h1>
                 <div className={classes.educationInfo}>
                     <div className={classes.educationYear}>
@@ -24,7 +27,7 @@ class EducationPageContainer extends Component{
                         </div>
                         <p>Automaatio ja tietotekniikka</p>
                     </div>
-                    <div className={classes.educationLogo}>
+                    <div>
                         <Uva/>
                     </div>
                 </div>
@@ -43,39 +46,42 @@ class EducationPageContainer extends Component{
                     </div>
                 </div>
                 <h1>Kurssit</h1>
-                    <div className={classes.educationInfo}>
-                        <div>
-
-                        </div>
-                        <div className={classes.educationInfoBox}>
-                            <div className={classes.educationInfoBox}>
+                    <div className={classes.coursesInfo}>
+                        <div></div>
+                        <div className={classes.coursesInfoBox}>
+                            <div className={classes.coursesInfoBox}>
                                 <h3>Sähkötyöturvallisuuskortti</h3>
                                 <p>Myönnetty 11/2018</p>
                                 <p>Voimassa 11/2023</p>
                             </div>
                         </div>
-                    </div>
-                    <div className={classes.educationInfo}>
                         <div>
-
+                            <Kortti1/>
                         </div>
-                        <div className={classes.educationInfoBox}>
-                            <div className={classes.educationInfoBox}>
+                    </div>
+                    <div className={classes.coursesInfo}>
+                        <div></div>
+                        <div className={classes.coursesInfoBox}>
+                            <div className={classes.coursesInfoBox}>
                                 <h3>Työturvallisuuskortti</h3>
                                 <p>Myönnetty 11/2018</p>
                                 <p>Voimassa 11/2023</p>
                             </div>
                         </div>
-                    </div>
-                    <div className={classes.educationInfo}>
                         <div>
-
+                            <Kortti/>
                         </div>
-                        <div className={classes.educationInfoBox}>
+                    </div>
+                    <div className={classes.coursesInfo}>
+                        <div></div>
+                        <div className={classes.coursesInfoBox}>
                             <div className={classes.educationInfoBox}>
                                 <h3>Trukkikortti</h3>
                                 <p>Myönnetty 07/2017</p>
                             </div>
+                        </div>
+                        <div>
+                            <Kortti2/>
                         </div>
                     </div>
 
