@@ -16,6 +16,7 @@ import Portfolio from './Containers/Portfolio/PortfolioContainer';
 import ContactPage from './Containers/Contact/ContactPageContainer';
 import Auth from './Containers/Auth/Auth';
 import Logout from './Containers/Auth/Logout/Logout';
+import Footer from './UI/Footer/Footer';
 
 import Twitter from './Assets/png/png2/001-twitter.png';
 import Facebook from './Assets/png/png2/002-facebook.png';
@@ -57,14 +58,13 @@ class App extends Component {
               </Layout> 
             </BrowserRouter>
           </div>
-            <div className={classes.footer}>
+            {/* <div className={classes.footer}>
               <div className={classes.inner_footer}>
-                <div className={classes.logo_container}>
+                 <div className={classes.logo_container}>
                   <h6>
-                    Designed by 
-                    Eemil Vähä
+        
                   </h6>
-                </div>
+                </div> 
 
                 <div className={classes.footer_third}>
                   <h2>Help</h2>
@@ -83,11 +83,11 @@ class App extends Component {
                   <a href="https://twitter.com/EemilVh"><img src={Twitter} alt=""></img></a>
                   <a href="https://www.instagram.com/eemilvahaa/"><img src={Instagram} alt=""></img></a>
                   <a href="https://www.linkedin.com/in/eemil-v%C3%A4h%C3%A4-3ba878196/"><img src={Linkedin} alt=""></img></a>
-                  <span>Eemil Vähä &copy; 2021</span>
+                  <span>Copyright &copy; 2021 Eemil Vähä - made by me.</span>
                 </div>
               </div>
-            </div>
-      
+            </div> */}
+          <Footer/>
         </div>
     );
   }

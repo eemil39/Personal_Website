@@ -4,6 +4,8 @@ import classes from './ExperiencePageContainer.module.css';
 import Eura from '../../Components/Backgrounds/Experiece/Eura';
 import Tampere from '../../Components/Backgrounds/Experiece/Tampere';
 import Kempele from '../../Components/Backgrounds/Experiece/Kempele';
+import Espoo from '../../Components/Backgrounds/Experiece/Espoo';
+import Notfound from '../../Components/Backgrounds/Experiece/Notfound';
 import AvantLogo from '../../Components/Backgrounds/Experiece/AvantLogo';
 
 class ExperiencePageContainer extends Component{
@@ -14,7 +16,7 @@ class ExperiencePageContainer extends Component{
     
     render() {
         return(
-            <div>
+            <div className={classes.container}>
                 <h1>Työkokemus</h1>
                 <div className={classes.experienceInfo}>
                     <div className={classes.experienceInfoBox}>
@@ -31,7 +33,7 @@ class ExperiencePageContainer extends Component{
                         </div>    
                     </div>
                     <div className={classes.experiencePicture}>
-                        <Kempele/>
+                        <Eura/>
                     </div>
                 </div>
                 <div className={classes.experienceInfo}>
@@ -47,7 +49,7 @@ class ExperiencePageContainer extends Component{
                         </div>
                     </div>
                     <div className={classes.experiencePicture}>
-                        <Eura/>
+                        <Kempele/>
                     </div>
                 </div>
                 <div className={classes.experienceInfo}>
@@ -80,7 +82,7 @@ class ExperiencePageContainer extends Component{
                         </div>
                     </div>
                     <div className={classes.experiencePicture}>
-                        <Eura/>
+                        <Notfound/>
                     </div>
                 </div>
                 <div className={classes.experienceInfo}>
@@ -93,7 +95,7 @@ class ExperiencePageContainer extends Component{
                         </p>
                     </div>
                     <div className={classes.experiencePicture}>
-                        <Eura/>
+                        <Notfound/>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import axios from '../../axios-books';
 
+import { connect } from 'react-redux';
 import classes from './BooksContainer.module.css';
 import Perttu1 from '../Backgrounds/Books/Perttu1';
 import Perttu2 from '../Backgrounds/Books/Perttu2';
@@ -133,10 +134,16 @@ class BooksContainer extends Component{
         return(
             <div>
                 {books}
-                <BooksForm/>
+                {this.props.isAuthenticated ? <BooksForm/>: <div></div>}
             </div>
         );
     }
 }
 
-export default BooksContainer;
+const mapStateToProps = state => {
+    return {
+        isAuthenticated: state.auth.token !== null
+    }
+}
+
+export default connect(mapStateToProps, null)(BooksContainer);

@@ -1,6 +1,8 @@
 .NavigationItems{
+    position: sticky;
     margin: 0;
     padding: 0;
+    margin-top: 50px;
     list-style: none;
     flex-flow: column;
     display: flex;
@@ -9,10 +11,11 @@
 
 @media (min-width: 1100px) {
     .NavigationItems{
+        position: sticky;
+        margin-top: 0;
         height: 50px;
         width: 100vw;
         flex-flow: row;
-        position: sticky;
         left: 0;
         top: 0;  
         background-color: #18181a;

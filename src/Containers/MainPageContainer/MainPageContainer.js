@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 
 import classes from './MainPageContainer.module.css';
 
-import MainPagePicture from '../../Components/Backgrounds/MainPageBackground/Background1';
 import NavigationButton from '../../UI/Buttons/NavigationButton';
 import ProfilePicture from '../../Components/Backgrounds/ProfilePicture/ProfilePicture';
 import EducationPicture from '../../Components/Backgrounds/Education/EducationPicture';
 import Contacts from '../../Components/Backgrounds/MainPageBackground/Contact';
 import Software from '../../Components/Backgrounds/MainPageBackground/Software';
+import MainPagePicture from '../../Components/Backgrounds/MainPageBackground/Background1';
 
 
 class MainPageContainer extends Component{
@@ -29,15 +29,20 @@ class MainPageContainer extends Component{
     render() {
         return(
             <div>
+                <div className={classes.background}>
                 <div className={classes.NameContainer}>
                     <h1>Eemil Vähä</h1>
+                </div>
+
                 </div>
 
                 <div className={classes.MainInfo}>
                     <div className={classes.MainInfoBox}>
                         <h3>Hei!</h3>
                         <p>
-                            Olen {this.getAge("1997-05-27")}-vuotias automaatio ja tietotekniikan opisklija.
+                            "Olen {this.getAge("1997-05-27")}-vuotias miehen alku Vaasasta. Opiskelen kolmatta vuotta automaatio- ja tietotekniikkaa Vaasan Yliopistossa,
+                            joten ajattelin, että nyt on sopiva aika luoda omat nettisivut. Loin tämän sivuston, jotta voin kertoa itsestäni enemmän ja esittää asiat hieman luovemmalla tavalla
+                            entä kuin ansioluettleossani."
                         </p>
                     </div>
                     <div className={classes.ProfilePicture}>
@@ -46,7 +51,7 @@ class MainPageContainer extends Component{
                 </div>
                 <div className={classes.MainPagePicture}>
                         <MainPagePicture/>
-                </div>
+                </div> 
                 <div className={classes.PortfolioInfo}>
                             <div className={classes.PictureBackground}>
                                 <EducationPicture/>
@@ -90,6 +95,9 @@ class MainPageContainer extends Component{
                                 <NavigationButton link="/yhteistiedot">Yhteistietoihin</NavigationButton>
                             </div>
                     </div>
+                </div>
+                <div className={classes.backgroundShape1}>
+               
                 </div>
             </div>
         );
