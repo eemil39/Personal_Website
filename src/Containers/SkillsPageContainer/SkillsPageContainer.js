@@ -124,7 +124,7 @@ class SkillsPageContainer extends Component{
                         </div>                              
                     </div>
                     <div className={classes.skillsInfoBox}>
-                        <h5>Visual Studio code</h5>
+                        <h5>Vs code</h5>
                         <h5>Microsoft Word</h5>
                         <h5>Microsoft Excel</h5>
                         <h5>MySQL Workbench</h5>

@@ -5,6 +5,8 @@ import { connect } from 'react-redux';
 import classes from './BooksContainer.module.css';
 import Perttu1 from '../Backgrounds/Books/Perttu1';
 import Perttu2 from '../Backgrounds/Books/Perttu2';
+import Kirja4 from '../Backgrounds/Books/Kirja4';
+import Kirja5 from '../Backgrounds/Books/Kirja5';
 import MaailmaKoronanJalkeen from '../Backgrounds/Books/MaailmaKoronanJalkeen';
 
 import BooksForm from '../Form/BooksForm';
@@ -57,7 +59,7 @@ class BooksContainer extends Component{
             <div></div>
         )
 
-        if(this.props.showBooks){
+/*         if(this.props.showBooks){
 
              books = (
                 <div className={classes.wrapper}>
@@ -66,20 +68,20 @@ class BooksContainer extends Component{
                         <div className={classes.booksContainerInfo}>
                             <h2>{book.title}</h2>
                             <p>{book.author}</p>
-                            <p>{book.publisyear}</p>
-                            <p>{book.read}</p>
-                            <p>{book.comment}</p>
+                            <p>Julkaisuvuosi {book.publisyear}</p>
+                            <p>Luettu {book.read}</p>
+                            <p>"{book.comment}"</p>
                         </div>
                         <div className={classes.booksContainerPicture}>
-                        <Perttu1/>
+                            <Perttu1/>
                         </div>
                     </div>
                     ))}
                 </div> 
              );
-        }
+        } */
 
-       /*  if(this.props.showBooks){ 
+          if(this.props.showBooks){ 
             books = (
             <div className={classes.wrapper}>
                 <div className={classes.booksContainer}>
@@ -127,9 +129,39 @@ class BooksContainer extends Component{
                         <MaailmaKoronanJalkeen/>
                     </div>
                 </div>
+                <div className={classes.booksContainer}>
+                    <div className={classes.booksContainerInfo}>
+                        <h2>Kuinka olla piittaamatta paskaakaan</h2>
+                        <p>Mark Manson</p>
+                        <p>Julkaisuvuosi 2016</p>
+                        <p>Luettu 06.02.2021 </p>
+                        <p>
+                            "Markilla on aika suorsukainen tapa kertoa asiat, mutta hyvää pohdintaa. Olisi ehkä pitänyt lukea kirja alkuperäisellä kiellä
+                            eli englanniksi, sillä käännettynä se tuntui jotenki vaisulta ja tökeröltä."
+                        </p>
+                    </div>
+                    <div className={classes.booksContainerPicture}>
+                        <Kirja4/>
+                    </div>
+                </div>
+                <div className={classes.booksContainer}>
+                    <div className={classes.booksContainerInfo}>
+                        <h2>Faktojen maailma</h2>
+                        <p>Hans Rosling</p>
+                        <p>Julkaisuvuosi 2018</p>
+                        <p>Luettu 12.02.2021 </p>
+                        <p>
+                            "Markilla on aika suorsukainen tapa kertoa asiat, mutta hyvää pohdintaa. Olisi ehkä pitänyt lukea kirja alkuperäisellä kiellä
+                            eli englanniksi, sillä käännettynä se tuntui jotenki vaisulta ja tökeröltä."
+                        </p>
+                    </div>
+                    <div className={classes.booksContainerPicture}>
+                        <Kirja5/>
+                    </div>
+                </div>
             </div>
         );
-        } */
+        } 
 
         return(
             <div>

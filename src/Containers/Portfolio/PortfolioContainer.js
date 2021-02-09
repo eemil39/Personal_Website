@@ -34,8 +34,8 @@ class PortfolioContainer extends Component{
                 </div>
                 <div className={classes.wrapper}>
                 <div className={classes.EducationInfo}>
-                            <div className={classes.educationPicture}>
-                                <Uwasa2/>
+                            <div className={classes.PictureBackground}>
+                               <Uwasa2/>
                             </div>
                     <div className={classes.EducationInfoBox}>
                         <h2>Koulutus</h2>
@@ -85,6 +85,9 @@ class PortfolioContainer extends Component{
                     </div>
                 </div>
                 </div>
+                <div className={classes.MainPagePictureMobile}>
+                       
+                       </div> 
             </div>
         );
     }

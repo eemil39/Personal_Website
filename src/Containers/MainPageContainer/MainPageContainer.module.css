@@ -226,12 +226,7 @@ h1 {
     margin-top: auto;
 }
 
-p {
-    text-align: start;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 40px;
-}
+
 .Button{
     position: relative;
     margin-top: 50px;
@@ -244,7 +239,7 @@ p {
 }
 
 .MainPagePicture {
-    margin-top: 50px;
+    display: none;
 }
 .background {
     display: grid;
@@ -296,20 +291,22 @@ p {
     position: relative;
     display: grid;
     grid-template-rows: auto auto;
+    
 }
 
 .MainInfo .MainInfoBox {
-    background-color: rgb(185, 180, 176);
+    
     height: auto;
     opacity: 0.9;
-    box-shadow: 2px 2px 2px #ccc;
+    box-shadow: 1px 2px 2px 2px #ccc;
 }
+
 .MainInfo .MainInfoBox h3{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 40px;
     font-weight: 100;
     text-align: start;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .PortfolioInfo {
@@ -339,7 +336,7 @@ p {
     text-align: start;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .ProjectsInfo {
@@ -366,7 +363,7 @@ p {
     text-align: start;
     margin-bottom: 50px;
     margin-top: 50px;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 .ContactInfo {
     margin-left: auto;
@@ -392,7 +389,16 @@ p {
     font-weight: 500;
     text-align: start;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-left: 30px;
+}
+.MainPagePictureMobile{
+    display: grid;
+    background-image: url(../../Assets/Images/MainPagePicture3.jpg);
+    background-color: rgb(68, 117, 163);
+    background-blend-mode: lighten;
+    background-size: 100%;
+    height: 32vw;
+    background-repeat: no-repeat;
 }
 }

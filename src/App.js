@@ -58,35 +58,6 @@ class App extends Component {
               </Layout> 
             </BrowserRouter>
           </div>
-            {/* <div className={classes.footer}>
-              <div className={classes.inner_footer}>
-                 <div className={classes.logo_container}>
-                  <h6>
-        
-                  </h6>
-                </div> 
-
-                <div className={classes.footer_third}>
-                  <h2>Help</h2>
-                  <a href="/terms">Terms &amp; conditions</a>
-                  <a href="/privacypolicy">Privacy Policy</a>
-                </div>
-
-                <div className={classes.footer_third}>
-                  <h2>More</h2>
-                  <a href="/more">About</a>
-                </div>
-
-                <div className={classes.footer_fourth}>
-                  <h2>Follow Me</h2>
-                  <a href="https://www.facebook.com/eemil.vaha"><img src={Facebook} alt=""></img></a>
-                  <a href="https://twitter.com/EemilVh"><img src={Twitter} alt=""></img></a>
-                  <a href="https://www.instagram.com/eemilvahaa/"><img src={Instagram} alt=""></img></a>
-                  <a href="https://www.linkedin.com/in/eemil-v%C3%A4h%C3%A4-3ba878196/"><img src={Linkedin} alt=""></img></a>
-                  <span>Copyright &copy; 2021 Eemil Vähä - made by me.</span>
-                </div>
-              </div>
-            </div> */}
           <Footer/>
         </div>
     );

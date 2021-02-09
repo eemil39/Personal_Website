@@ -93,15 +93,19 @@
 
     h3{
         text-align: start;
-        padding-left: 50px;
-        font-size: 24px;
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    p{
+        padding: 20px 0;
+        margin: 0;
     }
 
 
     h4 {
         text-align: center;
         margin-top: 24px;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 100;
     }
     .wrapper {
@@ -116,7 +120,6 @@
         position: relative;
         display: grid;
         grid-template-columns: 50% 50%;
-
     }
     .coursesInfo {
         margin-left: auto;
@@ -125,7 +128,7 @@
         height: 200px;
         position: relative;
         display: grid;
-        grid-template-columns: 50% 50%;
+        
     }
 
     .educationInfo .educationInfoBox p{
@@ -133,9 +136,19 @@
         padding-left: 0px;
         padding-right: 0;
     }
+    .coursesInfo .coursesInfoBox p{
+        text-align: start;
+        padding-left: 20px;
+        padding-right: 0;
+    }
     .educationInfo .educationInfoBox h3{
         text-align: start;
         padding-left: 0px;
+        padding-right: 0;
+    }
+    .coursesInfo .coursesInfoBox h3{
+        text-align: start;
+        padding-left: 20px;
         padding-right: 0;
     }
     .educationInfo .educationInfoBox .educationInfoLink {
@@ -146,7 +159,7 @@
     .educationInfo .educationInfoBox a{
         text-decoration: none;
         padding-left: 0;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 700;
         color: black;
     }
