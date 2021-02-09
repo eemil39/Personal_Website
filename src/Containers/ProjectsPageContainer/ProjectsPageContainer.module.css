@@ -49,3 +49,53 @@
         background-color: #acacac;
     }
 }
+@media (max-width: 1099px) {
+   
+    .BoxContainer{
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        width: 80%;
+        grid-template-columns: auto;
+    }
+
+    .BoxContainer .InfoBox{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .BoxContainer .InfoBox h2{
+        text-align: start;
+        font-size: 40px;
+        font-weight: 300;
+    }
+    .BoxContainer .InfoBox p{
+        line-height: 1.6;
+        text-align: justify;
+        padding: 0;
+        font-size: large;
+        color: rgb(66, 66, 66);
+    } 
+    .BoxContainer .InfoBox img{
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    } 
+    .BoxContainer .InfoBox .firstLetter{
+        color: #34c8fd;
+        float: left;
+        font-family: Georgia;
+        font-size: 75px;
+        line-height: 60px;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-left: 3px;
+    }
+
+    .separatorLine{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 2px;
+        background-color: #acacac;
+    }
+}

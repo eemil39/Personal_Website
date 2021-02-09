@@ -4,7 +4,7 @@
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-        background-color: rgb(185, 180, 176);  
+        background-color: rgb(219, 218, 216);
         width: 90%;
         overflow-y: scroll;
         height: 500px;
@@ -13,12 +13,14 @@
 
     .booksContainer{
         margin: 0;
-        padding: 50px;
-        width: 90%;
-        height: 293px;
+        padding: 70px;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
         position: relative;
         display: grid;
-        grid-template-columns: calc(100vw * 0.8 * 0.9 - 200px) 200px;
+        grid-template-columns: calc(100vw * 0.9 * 0.9 - 200px) 200px;
+        box-shadow: 0px 0px 2px rgb(0, 0, 0);
     }
     .booksContainer .booksContainerInfo{
         height: auto;
@@ -28,10 +30,50 @@
         text-align: start;
         padding-left: 16px;
         font-size: 24px;
+        font-weight: 400;
     }
     .booksContainer .booksContainerInfo p{
         text-align: start;
         padding-left: 20px;
         padding-right: 40px;
+    }
+}
+@media (max-width: 1099px) {
+    .wrapper{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(194, 194, 194);  
+        width: 90%;
+    
+        box-shadow: 0 3px 3px #ccc;
+    }
+
+    .booksContainer{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        padding-bottom: 20px;
+        width: 85%;
+        position: relative;
+        display: grid;
+        grid-template-rows: auto 470px;
+    }
+    .booksContainer .booksContainerInfo{
+       margin: 20px 0;
+    }
+    .booksContainer .booksContainerPicture{
+       
+    }
+
+    .booksContainer .booksContainerInfo h2{
+        text-align: start;
+        padding-left: 0;
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .booksContainer .booksContainerInfo p{
+        text-align: start;
+        padding: 10px 0px;
     }
 }

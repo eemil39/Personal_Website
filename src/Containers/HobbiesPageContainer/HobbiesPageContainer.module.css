@@ -124,6 +124,119 @@
         padding-left: 200px;
         margin-top: 100px;
     }
+}
+@media(max-width: 1099px) {
+    h1 {
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 50px;
+        font-weight: 200;
+        text-align: center;
+    }
+    
+    p {
+        text-align: start;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    .Button{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 
+    .hobbiesInfo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        width: 90%;
+        position: relative;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    .hobbiesInfo .hobbiesInfoBox{
+        background-color: rgb(185, 180, 176);
+        padding-bottom: 30px;
+    }
+    .hobbiesInfo .hobbiesInfoBox .Button {
+        padding: 20px;
+    }
+    .hobbiesInfo .hobbiesInfoBox h3{
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        font-weight: 100;
+        text-align: start;
+        padding-left: 30px;
+    }
+    .hobbiesInfo2 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        width: 90%;
+        position: relative;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    .hobbiesInfo2 .hobbiesInfoBox{
+        background-color: rgb(185, 180, 176);
+        padding-bottom: 20px;
+    }
+    .hobbiesInfo2 .hobbiesInfoBox h3{
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        font-weight: 100;
+        text-align: start;
+        padding-left: 30px;
+    }
+    .hobbiesInfo3 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        width: 90%;
+        position: relative;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    .hobbiesInfo3 .hobbiesInfoBox{
+        background-color: rgb(185, 180, 176);
+        padding-bottom: 20px;
+    }
+    .hobbiesInfo3 .hobbiesInfoBox h3{
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        font-weight: 100;
+        text-align: start;
+        padding-left: 30px;
+    }
+    .hobbiesInfo4 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        width: 80%;
+        position: relative;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    .hobbiesInfo4 .hobbiesInfoBox{
+        background-color: rgb(185, 180, 176);
+        padding-bottom: 20px;
+    }
+    .hobbiesInfo4 .hobbiesInfoBox h3{
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        font-weight: 100;
+        text-align: start;
+        padding-left: 30px;
+    }
+
+    .hotNowBox h2{
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 100px;
+    }
 }

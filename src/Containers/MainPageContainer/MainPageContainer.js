@@ -96,9 +96,9 @@ class MainPageContainer extends Component{
                             </div>
                     </div>
                 </div>
-                <div className={classes.backgroundShape1}>
-               
-                </div>
+                <div className={classes.MainPagePictureMobile}>
+                       
+                </div> 
             </div>
         );
     }

@@ -70,3 +70,77 @@
         opacity: 0.4;
     }
 }
+
+@media (max-width: 1099px) {
+
+    .skillsInfo {
+        background-color: rgb(221, 217, 213);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 90%;
+        position: relative;
+        display: grid;
+        grid-template-columns: calc(100vw * 0.9 * 0.15) calc(100vw * 0.9 * 0.45) calc(100vw * 0.9 * 0.4);
+        grid-template-rows: auto;
+        box-shadow: 0px 0px 2px #ccc;
+    } 
+
+    .skillsInfo .skillsInfoIcon .iconContainer{
+        margin-top: 10px;
+        margin-bottom: 16px;
+    }
+    .skillsInfo .skillsInfoIconFlag .iconContainer{
+        margin-top: 10px;
+        margin-bottom: 16px;
+    }
+    .skillsInfo h2 {
+        font-size: 30px;
+        margin-top: 16px;
+        font-weight: 400;
+    }
+    .skillsInfo h5 {
+        text-align: start;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 27px;
+    }
+    .skillsInfoIcon{
+        margin-top: 60px;
+        margin-bottom: 20px;
+        margin-left: 20%;
+
+    }
+    .skillsInfoIconFlag{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        margin-left: 20%;
+    }
+    .skillsInfoBox{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        margin-left: 16px;
+    }
+    .skillsInfoBox2{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .referenceLink{
+        text-align: start;
+        margin: 10px 0;
+        padding: 0 20px;
+        opacity: 0.4;
+    }
+    .iconContainer {
+        display: grid;
+        grid-template-columns: 32px 10px;
+    }
+    .iconContainer .tag{
+        margin: 0;
+        margin-top: 15px;
+        padding: 0;
+        width: 10px;
+        opacity: 0.4;
+    }
+}

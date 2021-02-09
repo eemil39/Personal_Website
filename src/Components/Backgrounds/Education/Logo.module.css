@@ -3,7 +3,6 @@
     position: relative;
     margin: 0;
     padding: 0;
-    
     background-color:#f0f0f0;
 }
 
@@ -11,4 +10,10 @@
     display: block;
     width: 100%;
     opacity: 0.3;
+}
+
+@media (max-width: 1099px) {
+    .Background img{
+        display: none;
+    }
 }

@@ -36,6 +36,7 @@
         display: grid;
         grid-template-columns: calc((0.9 * 100vw - 600px))  600px;
         grid-template-rows: 338px;
+        margin-bottom: 50px;
     }
     .experienceInfo .experienceInfoLink{
         width: 300px;
@@ -44,6 +45,108 @@
     .experienceInfo .experienceInfoBox {
         height: auto;
 
+    }
+
+    .experienceInfo .experienceInfoBox p{
+        text-align: start;
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+    .experienceInfo .experienceInfoBox .experienceInfoLink {
+        margin-top: 24px;
+        text-align: start;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .experienceInfo .experienceInfoBox .experienceInfoLink2 {
+        text-align: start;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .experienceInfo .experienceInfoBox a{
+        text-align: start;
+        text-decoration: none;
+        color: black;
+    }
+    .experienceInfo .experienceInfoBox a:hover{
+        color: rgb(189, 129, 74);
+    }
+    .experienceInfo .experienceInfoBox2 {
+        height: auto;
+    }
+
+    .experienceInfo .experienceInfoBox2 p{
+        text-align: start;
+        padding-left: 50px;
+        padding-right: 0;
+    }
+    .experienceInfo .experienceInfoBox2 .experienceInfoLink {
+        margin-top: 24px;
+        text-align: start;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .experienceInfo .experienceInfoBox2 .experienceInfoLink2 {
+        margin-top: 24px;
+        text-align: start;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .experienceInfo .experienceInfoBox2 a{
+        text-decoration: none;
+        color: black;
+    }
+    .experienceInfo .experienceInfoBox2 a:hover{
+        color: rgb(189, 129, 74);
+    }
+
+}
+@media (max-width: 1099px) {
+
+    h1 {
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 50px;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    h3{
+        text-align: start;
+        padding-left: 20px;
+        font-size: 24px;
+    }
+
+
+    h4 {
+        text-align: start;
+        padding-left: 50px;
+        margin-top: 24px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .container{
+        margin-bottom: 50px;
+    }
+
+    .experienceInfo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        box-shadow: 0px 0px 2px #ccc;
+        width: 90%;
+        position: relative;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    .experienceInfo .experienceInfoLink{
+        width: auto;
+    }
+
+    .experienceInfo .experienceInfoBox {
+        height: auto;
+        margin-bottom: 20px;
     }
 
     .experienceInfo .experienceInfoBox p{

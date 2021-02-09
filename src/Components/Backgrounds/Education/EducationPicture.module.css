@@ -1,12 +1,27 @@
-.Background {
-    display: inline-block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    box-shadow: 2px 2px 2px #ccc;
+@media (min-width: 1100px){
+    .Background {
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-shadow: 2px 2px 2px #ccc;
+    }
+    
+    .Background img{
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 1099px){
+    .Background {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .Background img{
+        display: block;
+        width: 100%;
+    }
 }
 
-.Background img{
-    display: block;
-    width: 100%;
-}
+

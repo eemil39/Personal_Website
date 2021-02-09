@@ -27,7 +27,7 @@ class EducationPageContainer extends Component{
                         </div>
                         <p>Automaatio ja tietotekniikka</p>
                     </div>
-                    <div>
+                    <div className={classes.Logo}>
                         <Uva/>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ class EducationPageContainer extends Component{
                         </div>
                         <p>Ylioppilas</p>
                     </div>
-                    <div>
+                    <div className={classes.Logo}>
                         <Spsu/>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ class EducationPageContainer extends Component{
                                 <p>Voimassa 11/2023</p>
                             </div>
                         </div>
-                        <div>
+                        <div className={classes.Logo}>
                             <Kortti1/>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ class EducationPageContainer extends Component{
                                 <p>Voimassa 11/2023</p>
                             </div>
                         </div>
-                        <div>
+                        <div className={classes.Logo}>
                             <Kortti/>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ class EducationPageContainer extends Component{
                                 <p>Myönnetty 07/2017</p>
                             </div>
                         </div>
-                        <div>
+                        <div className={classes.Logo}>
                             <Kortti2/>
                         </div>
                     </div>
