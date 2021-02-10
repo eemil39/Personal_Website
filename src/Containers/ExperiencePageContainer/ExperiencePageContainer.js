@@ -4,7 +4,6 @@ import classes from './ExperiencePageContainer.module.css';
 import Eura from '../../Components/Backgrounds/Experiece/Eura';
 import Tampere from '../../Components/Backgrounds/Experiece/Tampere';
 import Kempele from '../../Components/Backgrounds/Experiece/Kempele';
-import Espoo from '../../Components/Backgrounds/Experiece/Espoo';
 import Notfound from '../../Components/Backgrounds/Experiece/Notfound';
 import AvantLogo from '../../Components/Backgrounds/Experiece/AvantLogo';
 
@@ -26,7 +25,8 @@ class ExperiencePageContainer extends Component{
                         <h4>04/2020 - 09/2020</h4>
                         <p>Timpuri</p>
                         <p>
-                            Tarkempi kuvaus työtehtävistä. Voit myös kertoa saavutuksistasi tai työssä hankkimastasi erityisosaamisesta.
+                            Kesällä 2020 tein töitä pääasiassa Kempeleessä ja Eurassa. Kempeleen halli kohteessa rakensin yksin toimisto-osuuden levypintaan asti. Eurassa johdin 
+                            mm. kuvassa näkyvän katon asennuksen. Tuottelias kesä ettenkö sanoisi. 
                         </p>
                         <div className={classes.experienceInfoLink2}>
                             <a href="https://rakennusavant.fi/">rakennusavant.fi</a>
@@ -43,7 +43,10 @@ class ExperiencePageContainer extends Component{
                         </div>
                         <h4>05/2019 - 09/2019</h4>
                         <p>Timpuri</p>
-                        <p>Tarkempi kuvaus työtehtävistä. Voit myös kertoa saavutuksistasi tai työssä hankkimastasi erityisosaamisesta.</p>
+                        <p>
+                            Kesällä 2019 olin töissä Espoossa ja Raahessa. Raahessa työsekentelin omakotitalo työmaalla ja Espoossa useamman kohteen omakotialotyömaalla. Työtehtäviin
+                            kuului kaikki mitä timpuri omakotitalotyömaalla tekee.
+                        </p>
                         <div className={classes.experienceInfoLink2}>
                             <a href="https://rakennusavant.fi/">rakennusavant.fi</a>
                         </div>
@@ -60,7 +63,10 @@ class ExperiencePageContainer extends Component{
                         </div>
                         <h4>01/2018 - 09/2018</h4>
                         <p>Vähän kokemusta omaava työntekijä</p>
-                        <p>Tarkempi kuvaus työtehtävistä. Voit myös kertoa saavutuksistasi tai työssä hankkimastasi erityisosaamisesta.</p>
+                        <p>
+                            Vuonna 2018 armeijan jälkeen työskentelin 9 kuukautta opiskelujen aloitus ajankohtaan asti. Työskentelin pääasiassa Tampereella oikeanpuoleisessa kuvassa
+                            näkyvässä kohteessa. Työtethäviini kuului tuolloin mm. väliseinien levytys ja kaikki muut työtehtävät joihin kykenin. 
+                        </p>
                         <div className={classes.experienceInfoLink2}>
                             <a href="https://rakennusavant.fi/">rakennusavant.fi</a>
                         </div>
@@ -76,7 +82,11 @@ class ExperiencePageContainer extends Component{
                         </div>
                         <h4>05/2016 - 12/2016</h4>
                         <p>Aloitteleva työntekijä</p>
-                        <p>Tarkempi kuvaus työtehtävistä. Voit myös kertoa saavutuksistasi tai työssä hankkimastasi erityisosaamisesta.</p>
+                        <p>
+                            Vuonna 2016 aloitin esimmäistä kertaa työsekentelyn Rakennus Avantilla lukion jälkeen. Tuolloin minulla oli yhden kesän kokemus raksalta, joten 
+                            työtehtäväni kuului lähinnä maalaamista ja muita vastaavista työtehtäviä. Täytynee kuitenkin erikseen mainita, että sain näppärä sormisena kaverina listoittaa silloisen 
+                            Nurmeksessa sijaitsevan kohteen toimistotilat.
+                        </p>
                         <div className={classes.experienceInfoLink2}>
                             <a href="https://rakennusavant.fi/">rakennusavant.fi</a>
                         </div>

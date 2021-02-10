@@ -91,8 +91,7 @@ class BooksContainer extends Component{
                         <p>Julkaisuvuosi 2020</p>
                         <p>Luettu 08.01.2021 </p>
                         <p>
-                            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                            from 45 BC, making it over 2000 years old."
+                            "Hyvää podintaa nykymaailman menoista ja tulevaisuuden näkymistä. Kevyttä, helposti luettavaa ja omaksuttavaa tekstiä. Voin suositella lämpimästi."
                         </p>
                     </div>
                     <div className={classes.booksContainerPicture}>
@@ -106,8 +105,8 @@ class BooksContainer extends Component{
                         <p>Julkaisuvuosi 2020</p>
                         <p>Luettu 15.01.2021 </p>
                         <p>
-                            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                            from 45 BC, making it over 2000 years old."
+                            "Pertun tapa kuvailla ja tulkita ihmisten identiteettejä poikkeaa perinteisestä tavasta. Perinteiseti ihmiset identiofioituvat ammittinsa mukaan, kirjassa
+                            Perttu kertoo taitoihin perustuvasta identieetistä, minkä myötä itsekin insipiroiduin keksimään itselleni taitonimikkeitä. Omani ovat kiteyttäjä, komponeeraaja ja soveltaja."
                         </p>
                     </div>
                     <div className={classes.booksContainerPicture}>
@@ -121,8 +120,8 @@ class BooksContainer extends Component{
                         <p>Julkaisuvuosi 2021</p>
                         <p>Luettu 29.01.2021 </p>
                         <p>
-                            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                            from 45 BC, making it over 2000 years old."
+                            "Ei välttämättä paras lukemani kirja, mutta paljon mielenkiintoisia faktoja joista en aiemmin tiennyt. Kirja oli jotenkin todella raskasta luettavaa ja vaati 
+                            täyden keskittymisen, jotta pysyi kärryillä. Maailam koronan jälkeen ei kuvastanut kirjan sisältö lainkaan, kirjassa keskityttiin lähinnä pohtimaan maailman tilannetta ja menoa yleisellä tasolla."
                         </p>
                     </div>
                     <div className={classes.booksContainerPicture}>
@@ -151,8 +150,7 @@ class BooksContainer extends Component{
                         <p>Julkaisuvuosi 2018</p>
                         <p>Luettu 12.02.2021 </p>
                         <p>
-                            "Markilla on aika suorsukainen tapa kertoa asiat, mutta hyvää pohdintaa. Olisi ehkä pitänyt lukea kirja alkuperäisellä kiellä
-                            eli englanniksi, sillä käännettynä se tuntui jotenki vaisulta ja tökeröltä."
+                            "."
                         </p>
                     </div>
                     <div className={classes.booksContainerPicture}>

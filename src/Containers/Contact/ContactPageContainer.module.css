@@ -52,7 +52,7 @@
         height: 45;
     }
     .emailBox .emailLink a:hover{
-        background-color: rgb(110, 179, 122);
+        background-color: var(--color-title);
     }
 
 }

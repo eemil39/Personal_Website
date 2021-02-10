@@ -54,7 +54,7 @@ p {
 .MainInfoBox h3 {
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 40px;
-    font-weight: 100;
+    font-weight: 1000;
     text-align: start;
     padding-left: 70px;
     color: rgb(204, 204, 204);
@@ -75,7 +75,7 @@ p {
 }
 
 .EducationInfo .EducationInfoBox {
-    background-color: rgb(185, 180, 176);
+    background-color: var(--color-box);
     width: 100%;
     height: 400px;
     opacity: 0.9;
@@ -89,12 +89,11 @@ p {
     left: 580px;
 }
 
-
-
 .EducationInfo .EducationInfoBox h2{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 40px;
-    font-weight: 200;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    color: var(--font-color-h2);
     text-align: start;
     margin-top: 70px;
     margin-bottom: 70px;
@@ -108,15 +107,16 @@ p {
 .ExperienceInfoBox {
     grid-column: 2;
     grid-row: 2;
-    background-color: rgb(185, 180, 176);
+    background-color: var(--color-box);
     width: 100%;
     opacity: 0.9;
     box-shadow: 2px 2px 2px #ccc;
 }
 .ExperienceInfoBox h2{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 40px;
-    font-weight: 200;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    color: var(--font-color-h2);
     text-align: start;
     margin-top: 70px;
     margin-bottom: 70px;
@@ -136,12 +136,12 @@ p {
     height: 400px;
     position: relative;
     display: grid;
-    grid-template-columns: calc((100vw * 0.9 - 533px - (0.06* 100vw * 0.9))) 533px;
+    grid-template-columns: calc((100vw * 0.9 - 400px - (0.06* 100vw * 0.9))) 400px;
     grid-gap: 6%;
 }
 
 .SkillsInfo .SkillsInfoBox {
-    background-color: rgb(185, 180, 176);
+    background-color: var(--color-box);
     width: 100%;
     height: 400px;
     opacity: 0.9;
@@ -149,8 +149,9 @@ p {
 }
 .SkillsInfo .SkillsInfoBox h2{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 40px;
-    font-weight: 200;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    color: var(--font-color-h2);
     text-align: start;
     margin-top: 70px;
     margin-bottom: 70px;
@@ -165,12 +166,12 @@ p {
     height: 400px;
     position: relative;
     display: grid;
-    grid-template-columns: 728px calc((100vw * 0.9 - 728px - (0.06* 100vw * 0.9)));
+    grid-template-columns: 535px calc((100vw * 0.9 - 535px - (0.06* 100vw * 0.9)));
     grid-gap: 6%;
 }
 
 .HobbiesInfo .HobbiesInfoBox {
-    background-color: rgb(185, 180, 176);
+    background-color: var(--color-box);
     width: 100%;
     height: 400px;
     opacity: 0.9;
@@ -178,8 +179,9 @@ p {
 }
 .HobbiesInfo .HobbiesInfoBox h2{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 40px;
-    font-weight: 200;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    color: var(--font-color-h2);
     text-align: start;
     margin-top: 70px;
     margin-bottom: 70px;
@@ -237,8 +239,9 @@ p {
 }
 .MainInfoBox h3{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 40px;
-    font-weight: 100;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    color: var(--color-title);
     text-align: start;
     padding-left: 30px;
     color: rgb(204, 204, 204);
@@ -270,8 +273,9 @@ p {
 
 .EducationInfo .EducationInfoBox h2{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    color: var(--color-title);
     text-align: start;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -284,8 +288,9 @@ p {
 }
 .EducationInfo .ExperienceInfoBox h2{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    color: var(--color-title);
     text-align: start;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -307,8 +312,9 @@ p {
 }
 .SkillsInfo .SkillsInfoBox h2{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    color: var(--color-title);
     text-align: start;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -330,8 +336,9 @@ p {
 }
 .HobbiesInfo .HobbiesInfoBox h2{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    color: var(--color-title);
     text-align: start;
     margin-top: 50px;
     margin-bottom: 50px;

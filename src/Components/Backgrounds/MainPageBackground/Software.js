@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Background from '../../../Assets/Images/Software.jpg'; 
+import Background from '../../../Assets/Images/Software2.JPG'; 
 import classes from './General.module.css';
 
 const background = (props) => (

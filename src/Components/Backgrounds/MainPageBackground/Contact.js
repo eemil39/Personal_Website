@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Background from '../../../Assets/Images/Yhteistiedot.jpg'; 
+import Background from '../../../Assets/Images/Yhteistiedot2.jpg'; 
 import classes from './General.module.css';
 
 const background = (props) => (

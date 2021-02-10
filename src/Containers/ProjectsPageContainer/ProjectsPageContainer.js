@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import classes from './ProjectsPageContainer.module.css';
 import Project1 from '../../Assets/Images/VScode.jpg';
 import Project2 from '../../Assets/Images/VScode2.jpg';
+import Hitler from '../../Assets/Images/Hitler.JPG';
+import Bussikuski2 from '../../Assets/Images/Bussikuski2.JPG';
+import Bussikuski3 from '../../Assets/Images/Bussikuski3.JPG';
 
 class ProjectsPageContainer extends Component{
     
@@ -24,7 +27,13 @@ class ProjectsPageContainer extends Component{
                             ohjelmoidessa, että tykkään jopa hieman tästä "graaffisesta suunnittelusta". 
                         </p>
                         <p>
-                            
+                            Tämän sivuston frontend on toteutettu täysin Reactilla ja backendinä toimii googlen firebase. Tällä hetkellä voin itse kirjautua sisään sivustolle 
+                            "/admin" välilehdellä. Tarkoituksenani on toteuttaa ominaisuudet, joiden avulla voin lisätä asioita kuten kirjoja ja projkteja kirjautumalla sisään. Sivuston kehittäminen tulee
+                            mitä todennäköisimmin jatkumaan hamaan tulevaisuuteen. 
+                        </p>
+                        <p>
+                            Täytyy mainita vielä erikseen, että kaikki kuvat mitä on käytetty tällä sivulla on minun tekemiäni tai ottamia, lukuuottamatta tietenkää yrityksien 
+                            logoja. Voit käydä katsomaassa tämän sivuston "konepellin" alle github repostoryssä, mikä on julkinen.
                         </p>
                         <p>
                             Sivuston github repository <a href="https://github.com/eemil39/Personal_Website">github.com</a>.
@@ -36,21 +45,34 @@ class ProjectsPageContainer extends Component{
                 <div className={classes.separatorLine}></div>
                 <div className={classes.BoxContainer}>
                     <div className={classes.InfoBox}>
-                        <h2>Juomapeli Sivusto</h2>
+                        <h2>Juomapeli sivusto</h2>
                         <p>
-                            <span className={classes.firstLetter}>T</span>erve Lorem Ipsum has been the industry's standard dummy text ever 
-                            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It 
-                            has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum passages, and more recently 
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum passages, and more recently 
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum passages, and more recently 
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum passages, and more recently 
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <span className={classes.firstLetter}>O</span>len jostain syystä pitempään halunnut ohjemloida jonkun sovelluksen, missä käsitellään pelikortteja.
+                            Kun aloin hahmotella kortti pakkaa reactilla sain idean koodata pari eriä juomapeliä, mitä voisi sitten pelailla opiskelukavereiden kanssa illanistujaisissa.
+                            Olen ihan tyytyväinen aikaansaannokseeni, pelit toimivat moitteettomasti ja olen päässyt testaamaan pelejä ihan käytännön tasolla uutenavuotena. Sivusto tai sovellus 
+                            ei missään nimessä ole julkaisu kelpoista tavaraa. Enisnnäkään minulla ei ole oikeuksi mihinkään kuvamateriaaliin, mitä olen käyttäny saatikaan ääni efekteihin. Toiseksi
+                            sivustoa ei ole lainkaan ohjelmoitu mobiilaitteen näytölle sopivaksi. Testauksesta puhumattakaan.
                         </p>
-                            <img src={Project2} alt=""/>
+                        <p>
+                            Sivuston tarkoitus on kuitenkin lähinnä kehittää omia ohjelmointi taitojani ja parhaassa tapauksessa tuottaa samalla iloa itselleni ja kavereilleni. Jos sinua 
+                            kiinnostaa sivuston toteutustapa voit käydä tutustumassa lähdekoodiin github repostoryssä. 
+                        </p>
                         <p>
                             Sivuston github repository <a href="https://github.com/eemil39/juomapeli_sivusto">github.com</a>.
+                        </p>
+                            <img src={Project2} alt=""/>
+                            <img src={Hitler} alt=""/>
+                        <p>
+                            Ylläolvessa kuvassa näkyy "hitler" juomapeli, missä kukin pelaaja nostaa vuorollaan kortin ja suorittaa oikealla näkyvän tehtävän.
+                        </p>
+                            <img src={Bussikuski3} alt=""/>
+                        <p>
+                            Ylläolvessa kuvassa näkyy "bussikusi" juomapeli.
+                        </p>
+                            <img src={Bussikuski2} alt=""/>
+                        <p>
+                            Ylläolvessa kuvassa näkyy "bussikusi" juomapelin bussikuski kierros. Tässä pelin e-versio osottutuu ylivoimaiseki verrattuna oikeilla korteilla pelattuun, 
+                            sillä pelaaja voi pelata kierroksia todella nopeaan tahtiin, eikä kortteja tarvitse jakaa uudestaan jokaisen kierroksen jälkeen, sillä tietokone tekee sen puolestasi. 
                         </p>
 
                     </div>

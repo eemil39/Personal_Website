@@ -4,7 +4,7 @@ import classes from './PortfolioContainer.module.css';
 
 import MainPagePicture from '../../Components/Backgrounds/MainPageBackground/Background1';
 import NavigationButton from '../../UI/Buttons/NavigationButton';
-import Skills from '../../Components/Backgrounds/Education/Skills';
+import Skills from '../../Components/Backgrounds/Education/EducationPicture';
 import Uwasa2 from '../../Components/Backgrounds/Education/Uwasa2';
 import Hobbies from '../../Components/Backgrounds/Education/Hobbies';
 
@@ -40,7 +40,9 @@ class PortfolioContainer extends Component{
                     <div className={classes.EducationInfoBox}>
                         <h2>Koulutus</h2>
                             <p>
-                                
+                                Koulun penkillä olen istunut tähän astiseta elämästäni valtaosan, aivan kuten kaikki muutkin ikäiseni. Peruskoulun ja lukion olen suorittanut
+                                ruotsiksi koulussa Svenska Privatskolan i Uleåborg, minkä vuoksi koulusivistyskieleni on ruotsi. Tällä hetkellä minulla on menossa kandivuosi Vaasan yliopistossa ja
+                                kandityön kirjoitus projekti käynnissä. 
                             </p>
                                 <NavigationButton link="/education">Lue lisää</NavigationButton>
                             <div className={classes.Button}>
@@ -49,7 +51,8 @@ class PortfolioContainer extends Component{
                     <div className={classes.ExperienceInfoBox}>
                         <h2>Työkokemus</h2>
                             <p>
-                                
+                                Kaikki työkokemukseni on pääasiassa kertynyt rakennusalalta. Yläaste ikäisetä olen kulkenut kaikki kesät raksalla, minkä vuoksi olen mielestäni omaksunut ahkeran työmoraalin.
+                                Kukaan ei ole seppä syntyessään, mutta eihän siitä haittaa ole jos jotain osaa ennestään, päinvastoin.
                             </p>
                                 <NavigationButton link="/experience">Lue lisää</NavigationButton>
                             <div className={classes.Button}>
@@ -60,7 +63,7 @@ class PortfolioContainer extends Component{
                     <div className={classes.SkillsInfoBox}>
                         <h2>Osaaminen</h2>
                             <p>
-                                
+                                Tällä välilehdellä kerron omista kielitaidoistani ja kokemuksestani eri ohjelmointikielien sekä ohjelmien parissa.
                             </p>
                             <div className={classes.Button}>
                                 <NavigationButton link="/skills">Lue lisää</NavigationButton>
@@ -77,7 +80,7 @@ class PortfolioContainer extends Component{
                     <div className={classes.HobbiesInfoBox}>
                         <h2>Harrastukset</h2>
                             <p>
-                                
+                                Harrastukset kertovat paljon ihmisestä, joten tottakai harrastuksetkin tarvitsee oman välilehden, missä kerron omistani.
                             </p>
                             <div className={classes.Button}>
                                 <NavigationButton link="/freetime">Lue lisää</NavigationButton>
