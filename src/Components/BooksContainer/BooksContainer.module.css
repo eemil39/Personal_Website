@@ -4,7 +4,7 @@
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-        background-color: rgb(219, 218, 216);
+        background-color: rgb(230, 230, 230);
         width: 90%;
         overflow-y: scroll;
         height: 500px;
@@ -62,9 +62,7 @@
     .booksContainer .booksContainerInfo{
        margin: 20px 0;
     }
-    .booksContainer .booksContainerPicture{
-       
-    }
+
 
     .booksContainer .booksContainerInfo h2{
         text-align: start;

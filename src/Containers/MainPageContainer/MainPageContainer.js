@@ -4,15 +4,20 @@ import classes from './MainPageContainer.module.css';
 
 import NavigationButton from '../../UI/Buttons/NavigationButton';
 import ProfilePicture from '../../Components/Backgrounds/ProfilePicture/ProfilePicture';
-import EducationPicture from '../../Components/Backgrounds/Education/EducationPicture';
+import Portfolio from '../../Components/Backgrounds/MainPageBackground/Portfolio';
 import Contacts from '../../Components/Backgrounds/MainPageBackground/Contact';
 import Software from '../../Components/Backgrounds/MainPageBackground/Software';
 import MainPagePicture from '../../Components/Backgrounds/MainPageBackground/Background1';
+import Arrow from '../../UI/Arrow/Arrow';
 
 
 class MainPageContainer extends Component{
     componentDidMount() {
         window.scrollTo(0, 0)
+      }
+
+      scrollTo2 = () => {
+        window.scrollTo(0, 1000);
       }
 
       getAge(dateString) {
@@ -31,9 +36,11 @@ class MainPageContainer extends Component{
             <div>
                 <div className={classes.background}>
                 <div className={classes.NameContainer}>
-                    <h1>Eemil Vähä</h1>
+                    <div className={classes.Hei}>Hei!</div>
+                    <div className={classes.Me}>Mä oon</div>
+                    <div className={classes.Eemil}>Eemil Vähä.</div>
                 </div>
-
+                <Arrow click={this.scrollTo2}/>
                 </div>
 
                 <div className={classes.MainInfo}>
@@ -41,8 +48,8 @@ class MainPageContainer extends Component{
                         <h3>Hei!</h3>
                         <p>
                             "Olen {this.getAge("1997-05-27")}-vuotias miehen alku Vaasasta. Opiskelen kolmatta vuotta automaatio- ja tietotekniikkaa Vaasan Yliopistossa,
-                            joten ajattelin, että nyt on sopiva aika luoda omat nettisivut. Loin tämän sivuston, jotta voin kertoa itsestäni enemmän ja esittää asiat hieman luovemmalla tavalla
-                            entä kuin ansioluettleossani."
+                            joten ajattelin, että nyt on sopiva aika luoda omat nettisivut. Loin tämän sivuston, jotta voisin esittää samat asiat kun ansioluettelostani mutta, hieman
+                            luovemalla tavalla. Tarkoitukseni on luoda sivusto, mikä kuvastaa minua ja taitojani parhaalla mahdollisella tavalla."
                         </p>
                     </div>
                     <div className={classes.ProfilePicture}>
@@ -54,7 +61,7 @@ class MainPageContainer extends Component{
                 </div> 
                 <div className={classes.PortfolioInfo}>
                             <div className={classes.PictureBackground}>
-                                <EducationPicture/>
+                                <Portfolio/>
                             </div>
                     <div className={classes.PortfolioInfoBox}>
                         <h2>Portfolio</h2>
@@ -71,7 +78,7 @@ class MainPageContainer extends Component{
                     <div className={classes.ProjectsInfoBox}>
                         <h2>Ohjelmointi projektit</h2>
                             <p>
-                                Kerron omista ohjelmointi projekteistani, jotka ovat mainitsemisen arvoisia.  
+                                Kerron omista ohjelmointi projekteistani, jotka ovat mainitsemisen arvoisia. Tähän mennessä olen toteuttanut huikeat ideani pääasiassa Reactilla.
                             </p>
                             <div className={classes.Button}>
                                 <NavigationButton link="/projects">Lue lisää</NavigationButton>

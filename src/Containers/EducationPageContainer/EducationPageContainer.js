@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import classes from './EducationPageContainer.module.css';
 import Uva from '../../Components/Backgrounds/Education/Uva';
 import Spsu from '../../Components/Backgrounds/Education/Spsu';
+import Jkpr from '../../Components/Backgrounds/Education/Jkpr';
+import Ilmsk from '../../Components/Backgrounds/Education/Ilmsk';
 import Kortti from '../../Components/Backgrounds/Education/Kortti';
 import Kortti1 from '../../Components/Backgrounds/Education/Kortti1';
 import Kortti2 from '../../Components/Backgrounds/Education/Kortti2';
@@ -40,6 +42,7 @@ class EducationPageContainer extends Component{
                             <a href="https://www.spsu.fi/">Svenska Privatskolan i Uleåborg</a>
                         </div>
                         <p>Ylioppilas</p>
+                        <p>Myös peruskoulu </p>
                     </div>
                     <div className={classes.Logo}>
                         <Spsu/>
@@ -84,7 +87,36 @@ class EducationPageContainer extends Component{
                             <Kortti2/>
                         </div>
                     </div>
-
+                <h1>Varusmiespalvelu</h1>
+                <div className={classes.educationInfo}>
+                    <div className={classes.educationYear}>
+                        <h4>01/2017 - 03/2017</h4>
+                    </div>
+                    <div className={classes.educationInfoBox}>
+                        <div className={classes.educationInfoLink}>
+                            <a href="https://www.spsu.fi/">Rovaniemen Jääkäriprikaatti</a>
+                        </div>
+                        <p>Peruskoulutuskausi</p>
+                    </div>
+                    <div className={classes.Logo}>
+                        <Jkpr/>
+                    </div>
+                </div>
+                <div className={classes.educationInfo}>
+                    <div className={classes.educationYear}>
+                        <h4>03/2017 - 12/2017</h4>
+                    </div>
+                    <div className={classes.educationInfoBox}>
+                        <div className={classes.educationInfoLink}>
+                            <a href="https://www.spsu.fi/">Tikkakosken Ilmasotakoulu</a>
+                        </div>
+                        <p>Lentotekninen aliupseerikurssi</p>
+                        <p>Apumekaanikko</p>
+                    </div>
+                    <div className={classes.Logo}>
+                        <Ilmsk/>
+                    </div>
+                </div>
             </div>
 
         );

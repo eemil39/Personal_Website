@@ -69,7 +69,7 @@
         color: black;
     }
     .educationInfo .educationInfoBox a:hover{
-        color: rgb(189, 129, 74);
+        color: var(--color-title);
     }
 
     .educationInfo .educationYear{
@@ -164,7 +164,7 @@
         color: black;
     }
     .educationInfo .educationInfoBox a:hover{
-        color: rgb(189, 129, 74);
+        color:var(--color-title);
     }
 
     .educationInfo .educationYear{

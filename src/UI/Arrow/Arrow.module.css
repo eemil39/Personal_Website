@@ -1,0 +1,80 @@
+.Arrows {
+    position: absolute;
+    top: 80%;
+    left: calc(100vw * 0.5 - 115px);
+}
+.Arrows:hover{
+    cursor: pointer;
+}
+
+.Arrows .Arrow1 {
+    width: 5vw;
+    height: 5vw;
+    border: 2.5vw solid;
+    border-color: rgb(255, 255, 255) transparent transparent rgb(255, 255, 255);
+    -webkit-animation: slide1 3.5s linear infinite; 
+    animation: slide1 3.5s linear infinite;
+
+}
+.Arrows .Arrow2 {
+    width: 5vw;
+    height: 5vw;
+    border: 2.5vw solid;
+    border-color: rgb(255, 255, 255) transparent transparent rgb(255, 255, 255);
+    -webkit-animation: slide2 3.5s linear infinite; 
+    animation: slide2 3.5s linear infinite;
+
+}
+
+@-webkit-keyframes slide1 {
+    0%      { opacity:0; transform: translateY(-100%) rotate(-135deg)}	
+    25%      { opacity:1; transform: translateY(-50%) rotate(-135deg)}		
+    55%      { opacity:0; transform: translateY(0%) rotate(-135deg)}	
+    75%      { opacity:0; transform: translateY(0%) rotate(-135deg)}	
+    100%      { opacity:0; transform: translateY(0%) rotate(-135deg)}	
+}
+@keyframes slide1 {
+    0%      { opacity:0; transform: translateY(-100%) rotate(-135deg)}	
+    25%      { opacity:1; transform: translateY(-50%) rotate(-135deg)}		
+    55%      { opacity:0; transform: translateY(0%) rotate(-135deg)}	
+    75%      { opacity:0; transform: translateY(0%) rotate(-135deg)}	
+    100%      { opacity:0; transform: translateY(0%) rotate(-135deg)}	
+}
+@-webkit-keyframes slide2 {
+    0%      { opacity:0; transform: translateY(0%) rotate(-135deg)}	
+    25%      { opacity:0; transform: translateY(0%) rotate(-135deg)}	
+    45%      { opacity:0; transform: translateY(-200%) rotate(-135deg)}	
+    75%      { opacity:1; transform: translateY(-150%) rotate(-135deg)}	
+    100%      { opacity:0.2; transform: translateY(-100%) rotate(-135deg)}	
+}
+@keyframes slide2 {
+    0%      { opacity:0; transform: translateY(0%) rotate(-135deg)}	
+    25%      { opacity:0; transform: translateY(0%) rotate(-135deg)}	
+    45%      { opacity:0; transform: translateY(-200%) rotate(-135deg)}	
+    75%      { opacity:1; transform: translateY(-150%) rotate(-135deg)}	
+    100%      { opacity:0.2; transform: translateY(-100%) rotate(-135deg)}	
+}
+
+@media (max-width: 1100px){
+    .Arrows {
+        position: absolute;
+        top: 70%;
+        left: calc(100vw * 0.4);
+    }
+    .Arrows .Arrow1 {
+        width: 5vw;
+        height: 5vw;
+        border: 2.5vw solid;
+        border-color: rgb(255, 255, 255) transparent transparent rgb(255, 255, 255);
+        -webkit-animation: slide1 2s linear infinite; 
+        animation: slide1 2s linear infinite;
+    }
+    .Arrows .Arrow2 {
+        width: 5vw;
+        height: 5vw;
+        border: 2.5vw solid;
+        border-color: rgb(255, 255, 255) transparent transparent rgb(255, 255, 255);
+        -webkit-animation: slide1 2s linear infinite; 
+        animation: slide2 2s linear infinite;
+    }
+}

@@ -16,7 +16,7 @@ class HobbiesPageContainer extends Component{
     
     
     state = {
-        showBooks: false,
+        showBooks: true,
     }
 
     showBooks = () => {
@@ -60,7 +60,8 @@ class HobbiesPageContainer extends Component{
                         <h3>Kuntosali</h3>
                             <p>
                                 Tärkein harrastukseni on kuntosalilla käyminen, sillä se parantaa ja ylläpitää sekä henkistä että fyysistä hyvinvointiani.
-                                Etenkin nyt kun liikuntaa ei tule työn myötä yhtäpaljon kuin ennen, koen kuntosalilla käymisen entistä tärkeämmäksi. 
+                                Etenkin nyt kun liikuntaa ei tule työn myötä yhtäpaljon kuin ennen, koen kuntosalilla käymisen entistä tärkeämmäksi. En ole omaksunut tavoitteellista
+                                treenaamista, minulle riittää, että tulee hyvä mieli ja olo treenin jälkeen.
                             </p>
                     </div>
                 </div>
@@ -69,8 +70,7 @@ class HobbiesPageContainer extends Component{
                         <h3>Lukeminen</h3>
                             <p>
                                 Tuoreimpia harrastuksiani on lukeminen. Lisäsin tänne listan, minne lisään kaikki tänä vuonna lukemani kirjat.
-                                Luen pääasiassa tietokirjoja, mutta pyrin myös lukemaan kaunokirjallisuutta, sillä uskon sen parantavan
-                                mielikuvitusta ja luovuutta.
+                                Luen pääasiassa tietokirjoja, mutta pyrin myös lukemaan kaunokirjallisuutta, terveen vaihtelun vuoksi. Tavoitteeni on lukea vähintää kirja viikossa tämän vuoden ajan.
                             </p>
                     <div className={classes.Button}>
                         <Button click={this.showBooks}>{buttonContent}</Button>
