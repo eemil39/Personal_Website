@@ -5,7 +5,6 @@ import { Redirect } from 'react-router-dom';
 import classes from './Auth.module.css';
 import Input from '../../UI/Input/Input';
 import Button from '../../UI/Buttons/Button';
-import Spinner from '../../UI/Spinner/Spinner';
 import { updateObject, checkValiditation } from '../../shared/uitility';
 import * as actions from '../../store/actions/index';
 

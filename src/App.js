@@ -18,11 +18,6 @@ import Auth from './Containers/Auth/Auth';
 import Logout from './Containers/Auth/Logout/Logout';
 import Footer from './UI/Footer/Footer';
 
-import Twitter from './Assets/png/png2/001-twitter.png';
-import Facebook from './Assets/png/png2/002-facebook.png';
-import Instagram from './Assets/png/png2/003-instagram.png';
-import Linkedin from './Assets/png/png2/004-linkedin.png';
-
 
 class App extends Component {
 

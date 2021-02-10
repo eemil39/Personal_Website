@@ -78,7 +78,7 @@ class MainPageContainer extends Component{
                     <div className={classes.ProjectsInfoBox}>
                         <h2>Ohjelmointi projektit</h2>
                             <p>
-                                Kerron josistain omista ohjelmointi projekteistani, jotka ovat mainitsemisen arvoisia. Tällä hetkellä olen pääasiassa toteuttanut huikeat ideani Reactilla.
+                                Kerron omista ohjelmointi projekteistani, jotka ovat mainitsemisen arvoisia. Tähän mennessä olen toteuttanut huikeat ideani pääasiassa Reactilla.
                             </p>
                             <div className={classes.Button}>
                                 <NavigationButton link="/projects">Lue lisää</NavigationButton>
