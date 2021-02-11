@@ -27,8 +27,8 @@ class PortfolioContainer extends Component{
                     <div className={classes.MainInfoBox}>
                     <h3>Hei!</h3>
                     <p>
-                        Olen koonnut tänne kaikki tiedot koulutuksestani, työkokemuksestani sekä taidoistani ansioluettelon tavoin. Tämä sivu ei kuitenkaan ole ansioluettelo ja poikkeaa
-                        perinteisestä ansioluettelosta, sillä erotuksella, että esitän asiat omalla tavallani.  
+                        Olen koonnut tänne kaikki tiedot koulutuksestani, työkokemuksestani, taidoistani sekä harrastuksistani ansioluettelon tavoin. Pyrkimykseni on kuitenkin
+                        välittää hieman enemmän informaatiota kuin, mitä pelkästään asioiden luetteleminen CV:ssä välittää. 
                     </p>
                     </div>
                 </div>

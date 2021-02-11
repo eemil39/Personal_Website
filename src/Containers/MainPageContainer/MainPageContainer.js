@@ -48,7 +48,7 @@ class MainPageContainer extends Component{
                         <h3>Hei!</h3>
                         <p>
                             "Olen {this.getAge("1997-05-27")}-vuotias miehen alku Vaasasta. Opiskelen kolmatta vuotta automaatio- ja tietotekniikkaa Vaasan Yliopistossa,
-                            joten ajattelin, että nyt on sopiva aika luoda omat nettisivut. Loin tämän sivuston, jotta voisin esittää samat asiat kun ansioluettelostani mutta, hieman
+                            joten ajattelin, että nyt on sopiva aika luoda omat nettisivut. Loin tämän sivuston, jotta voisin esittää samat asiat kun ansioluettelostani, mutta hieman
                             luovemalla tavalla. Tarkoitukseni on luoda sivusto, mikä kuvastaa minua ja taitojani parhaalla mahdollisella tavalla."
                         </p>
                     </div>
@@ -104,7 +104,6 @@ class MainPageContainer extends Component{
                     </div>
                 </div>
                 <div className={classes.MainPagePictureMobile}>
-                       
                 </div> 
             </div>
         );

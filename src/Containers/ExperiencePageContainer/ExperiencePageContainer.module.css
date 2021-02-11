@@ -30,13 +30,14 @@
     .experienceInfo {
         margin-left: auto;
         margin-right: auto;
-        box-shadow: 0px 0px 2px #ccc;
         width: 90%;
         position: relative;
         display: grid;
         grid-template-columns: calc((0.9 * 100vw - 600px))  600px;
         grid-template-rows: 338px;
         margin-bottom: 50px;
+        box-shadow: var(--box-shadow-1);
+        background-color: var(--color-box);
     }
     .experienceInfo .experienceInfoLink{
         width: 300px;
@@ -134,11 +135,12 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
-        box-shadow: 0px 0px 2px #ccc;
         width: 90%;
         position: relative;
         display: grid;
         grid-template-rows: auto auto;
+        box-shadow: var(--box-shadow-1);
+        background-color: var(--color-box);
     }
 
     .experienceInfo .experienceInfoLink{

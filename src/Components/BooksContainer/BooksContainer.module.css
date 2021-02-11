@@ -24,6 +24,7 @@
     }
     .booksContainer .booksContainerInfo{
         height: auto;
+        margin: 20px 0;
     }
 
     .booksContainer .booksContainerInfo h2{

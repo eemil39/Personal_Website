@@ -70,9 +70,6 @@ class ContactPageContainer extends Component{
                         <a href="mailto:eemil_vaha@hotmail.com">Lähetä sähköposti</a>
                     </div>
                 </div>
-                <div className={classes.MainPagePictureMobile}>
-                       
-                </div> 
             </div>
 
         );

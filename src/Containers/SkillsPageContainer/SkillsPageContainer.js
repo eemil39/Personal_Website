@@ -30,16 +30,20 @@ class SkillsPageContainer extends Component{
                 <div className={classes.skillsInfo}>
                     <div className={classes.skillsInfoIconFlag}>
                             <div className={classes.iconContainer}>
-                                <img src={Finland} alt="Finland"></img>                    
+                                <img src={Finland} alt="Finland"></img>       
+                                <div className={classes.tag}>➀</div>               
                             </div>
                             <div className={classes.iconContainer}>
-                                <img src={England} alt="Enland"></img>                    
+                                <img src={England} alt="Enland"></img> 
+                                <div className={classes.tag}>➀</div>                     
                             </div>
                             <div className={classes.iconContainer}>
-                                <img src={Sweden} alt=""></img>                    
+                                <img src={Sweden} alt=""></img>        
+                                <div className={classes.tag}>➀</div>              
                             </div>
                             <div className={classes.iconContainer}>
-                                <img src={Norway} alt=""></img>                    
+                                <img src={Norway} alt=""></img>        
+                                <div className={classes.tag}>➀</div>              
                         </div>                              
                     </div>
                     <div className={classes.skillsInfoBox}>
@@ -60,25 +64,32 @@ class SkillsPageContainer extends Component{
                     <div className={classes.skillsInfoTitle}>
                         <div className={classes.skillsInfoIcon}>
                                 <div className={classes.iconContainer}>
-                                    <img src={ReactJS} alt=""></img>                    
+                                    <img src={ReactJS} alt=""></img>       
+                                    <div className={classes.tag}>➀</div>               
                                 </div>
                                 <div className={classes.iconContainer}>
-                                    <img src={JavaScript} alt=""></img>                    
+                                    <img src={JavaScript} alt=""></img>    
+                                    <div className={classes.tag}>➁</div>                  
                                 </div>
                                 <div className={classes.iconContainer}>
-                                    <img src={CSS} alt=""></img>                    
+                                    <img src={CSS} alt=""></img>           
+                                    <div className={classes.tag}>➂</div>           
                                 </div>
                                 <div className={classes.iconContainer}>
-                                    <img src={Html5} alt=""></img>                    
+                                    <img src={Html5} alt=""></img>  
+                                    <div className={classes.tag}>➁</div>                    
                                 </div>
                                 <div className={classes.iconContainer}>
-                                    <img src={Java} alt=""></img>                    
+                                    <img src={Java} alt=""></img> 
+                                    <div className={classes.tag}>➁</div>                     
                                 </div>
                                 <div className={classes.iconContainer}>
-                                    <img src={CLogo} alt=""></img>                    
+                                    <img src={CLogo} alt=""></img> 
+                                    <div className={classes.tag}>➂</div>                     
                                 </div>
                                 <div className={classes.iconContainer}>
-                                    <img src={MySql} alt=""></img>                    
+                                    <img src={MySql} alt=""></img> 
+                                    <div className={classes.tag}>➁</div>                     
                                 </div>                       
                         </div>
                     </div>
