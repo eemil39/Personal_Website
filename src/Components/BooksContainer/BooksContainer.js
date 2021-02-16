@@ -148,9 +148,11 @@ class BooksContainer extends Component{
                         <h2>Faktojen maailma</h2>
                         <p>Hans Rosling</p>
                         <p>Julkaisuvuosi 2018</p>
-                        <p>Luettu 12.02.2021 </p>
+                        <p>Luettu 10.02.2021 </p>
                         <p>
-                            "."
+                            "Ei sitä osannu edes kuvitella kuinka väärässä oma maailmankuva olikaan. Todella inspiroiva kirja, jonka luettua katsoo maailmaa taas hieman eri silmin.
+                            Mielestäni jokaisen tulisi lukea Hans kyseisen kirjan, sillä aivan kuten Hans Rosling kirjassaan todisti, lähestulkoon kaikilla ihmisillä maailmassa on vanhentunutta
+                            tietoa maailmastamme ja sen tilasta."
                         </p>
                     </div>
                     <div className={classes.booksContainerPicture}>
