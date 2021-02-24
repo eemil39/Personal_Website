@@ -5,12 +5,12 @@ ApiKey.*
 /node_modules
 /.pnp
 .pnp.js
-
 # testing
 /coverage
 
 # production
 /build
+/functions
 
 # misc
 .DS_Store

@@ -31,7 +31,7 @@ class App extends Component {
     let routes = (
         <Switch>
           <Route path="/curriculum-vitae" component={Portfolio} />
-          <Route path="/yhteistiedot" component={ContactPage} />
+          <Route path="/yhteystiedot" component={ContactPage} />
           <Route path="/freetime" component={HobbiesPage} />
           <Route path="/education" component={EducationPage} />
           <Route path="/experience" component={ExperiencePage} />

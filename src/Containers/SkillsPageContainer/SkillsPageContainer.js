@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import classes from './SkillsPageContainer.module.css';
 import Norway from '../../Assets/png/001-norway.png'
@@ -26,59 +27,70 @@ class SkillsPageContainer extends Component{
     render() {
         return(
             <div>
-                <h1>Kielitaidot</h1>
+                <h1>{this.props.language === 'Fin' ? 'Kielitaidot' : this.props.language === 'Eng' ? 'Language skills' :this.props.language === 'Swe' ? 'Språkkunskaper ' : 'Kielitaidot' }</h1>
                 <div className={classes.skillsInfo}>
                     <div className={classes.skillsInfoIconFlag}>
                             <div className={classes.iconContainer}>
-                                <img src={Finland} alt="Finland"></img>                    
+                                <img src={Finland} alt="Finland"></img>       
+                                <div className={classes.tag}>➀</div>               
                             </div>
                             <div className={classes.iconContainer}>
-                                <img src={England} alt="Enland"></img>                    
+                                <img src={England} alt="Enland"></img> 
+                                <div className={classes.tag}>➀</div>                     
                             </div>
                             <div className={classes.iconContainer}>
-                                <img src={Sweden} alt=""></img>                    
+                                <img src={Sweden} alt=""></img>        
+                                <div className={classes.tag}>➀</div>              
                             </div>
                             <div className={classes.iconContainer}>
-                                <img src={Norway} alt=""></img>                    
+                                <img src={Norway} alt=""></img>        
+                                <div className={classes.tag}>➀</div>              
                         </div>                              
                     </div>
                     <div className={classes.skillsInfoBox}>
-                        <h5>Suomi</h5>
-                        <h5>Englanti</h5>
-                        <h5>Ruotsi</h5>
-                        <h5>Norja</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Suomi' : this.props.language === 'Eng' ? 'Finnish' :this.props.language === 'Swe' ? 'Finska' : 'Suomi' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Englanti' : this.props.language === 'Eng' ? 'English' :this.props.language === 'Swe' ? 'Engleska' : 'Englanti' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Ruotsi' : this.props.language === 'Eng' ? 'Swedish' :this.props.language === 'Swe' ? 'Svenska' : 'Ruotsi' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Norja' : this.props.language === 'Eng' ? 'Norwegian' :this.props.language === 'Swe' ? 'Norska' : 'Norja' }</h5>
                     </div>
                     <div className={classes.skillsInfoBox2}>
-                        <h5>Äidinkieli</h5>
-                        <h5>Hyvä</h5>
-                        <h5>Hyvä</h5>
-                        <h5>Kohtalainen</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Äidinkieli' : this.props.language === 'Eng' ? 'Native' :this.props.language === 'Swe' ? 'Modersmål' : 'Äidinkieli' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Hyvä' : this.props.language === 'Eng' ? 'Proficient' :this.props.language === 'Swe' ? 'Bra' : 'Hyvä' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Hyvä' : this.props.language === 'Eng' ? 'Proficient' :this.props.language === 'Swe' ? 'Bra' : 'Hyvä' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Kohtalainen' : this.props.language === 'Eng' ? 'Conversational' :this.props.language === 'Swe' ? 'Grundnivå' : 'Kohtalainen' }</h5>
                     </div>
                 </div>
-                <h1>Ohjelmointi taidot</h1>
+                <h1>{this.props.language === 'Fin' ? 'Ohjelmointi taidot' : this.props.language === 'Eng' ? '' :this.props.language === 'Swe' ? ' ' : 'Ohjelmointi taidot' }</h1>
                 <div className={classes.skillsInfo}>
                     <div className={classes.skillsInfoTitle}>
                         <div className={classes.skillsInfoIcon}>
                                 <div className={classes.iconContainer}>
-                                    <img src={ReactJS} alt=""></img>                    
+                                    <img src={ReactJS} alt=""></img>       
+                                    <div className={classes.tag}>➀</div>               
                                 </div>
                                 <div className={classes.iconContainer}>
-                                    <img src={JavaScript} alt=""></img>                    
+                                    <img src={JavaScript} alt=""></img>    
+                                    <div className={classes.tag}>➁</div>                  
                                 </div>
                                 <div className={classes.iconContainer}>
-                                    <img src={CSS} alt=""></img>                    
+                                    <img src={CSS} alt=""></img>           
+                                    <div className={classes.tag}>➂</div>           
                                 </div>
                                 <div className={classes.iconContainer}>
-                                    <img src={Html5} alt=""></img>                    
+                                    <img src={Html5} alt=""></img>  
+                                    <div className={classes.tag}>➁</div>                    
                                 </div>
                                 <div className={classes.iconContainer}>
-                                    <img src={Java} alt=""></img>                    
+                                    <img src={Java} alt=""></img> 
+                                    <div className={classes.tag}>➁</div>                     
                                 </div>
                                 <div className={classes.iconContainer}>
-                                    <img src={CLogo} alt=""></img>                    
+                                    <img src={CLogo} alt=""></img> 
+                                    <div className={classes.tag}>➂</div>                     
                                 </div>
                                 <div className={classes.iconContainer}>
-                                    <img src={MySql} alt=""></img>                    
+                                    <img src={MySql} alt=""></img> 
+                                    <div className={classes.tag}>➁</div>                     
                                 </div>                       
                         </div>
                     </div>
@@ -92,16 +104,16 @@ class SkillsPageContainer extends Component{
                         <h5>MySQL</h5>
                     </div>
                     <div className={classes.skillsInfoBox2}>
-                        <h5>Hyvä</h5>
-                        <h5>Hyvä</h5>
-                        <h5>Hyvä</h5>
-                        <h5>Hyvä</h5>
-                        <h5>Kohtalainen</h5>
-                        <h5>Kohtalainen</h5>
-                        <h5>Perusteet</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Hyvä' : this.props.language === 'Eng' ? 'Good' :this.props.language === 'Swe' ? 'Bra' : 'Hyvä' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Hyvä' : this.props.language === 'Eng' ? 'Good' :this.props.language === 'Swe' ? 'Bra' : 'Hyvä' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Hyvä' : this.props.language === 'Eng' ? 'Good' :this.props.language === 'Swe' ? 'Bra' : 'Hyvä' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Hyvä' : this.props.language === 'Eng' ? 'Good' :this.props.language === 'Swe' ? 'Bra' : 'Hyvä' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Kohtalainen' : this.props.language === 'Eng' ? 'Beginner' :this.props.language === 'Swe' ? 'Grundnivå' : 'Kohtalainen' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Kohtalainen' : this.props.language === 'Eng' ? 'Beginner' :this.props.language === 'Swe' ? 'Grundnivå' : 'Kohtalainen' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Perusteet' : this.props.language === 'Eng' ? 'Basics' :this.props.language === 'Swe' ? 'Grunderna ' : 'Kohtalainen' }</h5>
                     </div>
                 </div>
-                <h1>IT-taidot</h1>
+                <h1>{this.props.language === 'Fin' ? 'IT-taidot' : this.props.language === 'Eng' ? 'IT skills' :this.props.language === 'Swe' ? '' : 'IT-kunskaper' }</h1>
                 <div className={classes.skillsInfo}>
                     <div className={classes.skillsInfoTitle}>
                         <div className={classes.skillsInfoIcon}>
@@ -131,17 +143,15 @@ class SkillsPageContainer extends Component{
                         <h5>IntelliJ IDEA</h5>
                         <h5>Eclipse</h5>
                         <h5>Matlab</h5>
-                        <h5>AutoCad</h5>
                     </div>
                     <div className={classes.skillsInfoBox2}>
-                        <h5>Hyvä</h5>
-                        <h5>Hyvä</h5>
-                        <h5>Hyvä</h5>
-                        <h5>Perusteet</h5>
-                        <h5>Kohtalainen</h5>
-                        <h5>Kohtalainen</h5>
-                        <h5>Kohtalainen</h5>
-                        <h5>Perusteet</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Hyvä' : this.props.language === 'Eng' ? 'Good' :this.props.language === 'Swe' ? 'Bra' : 'Hyvä' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Hyvä' : this.props.language === 'Eng' ? 'Good' :this.props.language === 'Swe' ? 'Bra' : 'Hyvä' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Hyvä' : this.props.language === 'Eng' ? 'Good' :this.props.language === 'Swe' ? 'Bra' : 'Hyvä' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Perusteet' : this.props.language === 'Eng' ? 'Basics' :this.props.language === 'Swe' ? 'Grunderna ' : 'Kohtalainen' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Kohtalainen' : this.props.language === 'Eng' ? 'Beginner' :this.props.language === 'Swe' ? 'Grundnivå' : 'Kohtalainen' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Kohtalainen' : this.props.language === 'Eng' ? 'Beginner' :this.props.language === 'Swe' ? 'Grundnivå' : 'Kohtalainen' }</h5>
+                        <h5>{this.props.language === 'Fin' ? 'Kohtalainen' : this.props.language === 'Eng' ? 'Beginner' :this.props.language === 'Swe' ? 'Grundnivå' : 'Kohtalainen' }</h5>
                     </div>
                 </div>
                     <div className={classes.referenceLink}> ➀ Icons made by 
@@ -160,4 +170,10 @@ class SkillsPageContainer extends Component{
     }
 }
 
-export default SkillsPageContainer;
+const mapStateToProps = state => {
+    return {
+        language: state.language.language
+    }
+}
+
+export default connect(mapStateToProps, null)(SkillsPageContainer);

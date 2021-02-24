@@ -81,7 +81,7 @@
         margin-bottom: 50px;
     } 
     .BoxContainer .InfoBox .firstLetter{
-        color: #34c8fd;
+        color: var(--color-title);
         float: left;
         font-family: Georgia;
         font-size: 75px;

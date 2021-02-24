@@ -3,11 +3,6 @@ import axios from '../../axios-books';
 
 import { connect } from 'react-redux';
 import classes from './BooksContainer.module.css';
-import Perttu1 from '../Backgrounds/Books/Perttu1';
-import Perttu2 from '../Backgrounds/Books/Perttu2';
-import Kirja4 from '../Backgrounds/Books/Kirja4';
-import Kirja5 from '../Backgrounds/Books/Kirja5';
-import MaailmaKoronanJalkeen from '../Backgrounds/Books/MaailmaKoronanJalkeen';
 
 import BooksForm from '../Form/BooksForm';
 
@@ -15,24 +10,7 @@ import BooksForm from '../Form/BooksForm';
 class BooksContainer extends Component{
     
     state = {
-        booksArray: null,
-        books: {
-            book1: {
-                title: 'Tulevaisuuden Lukujärjestys',
-                author: 'Perttu Pölönen',
-                year: '2020',
-                read: '08.01.2021',
-                comment: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC making it over 2000 years old.'
-            },
-            book2: {
-                title: 'Tulevaisuuden Lukujärjestys',
-                author: 'Perttu Pölönen',
-                year: '2020',
-                read: '08.01.2021',
-                comment: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC making it over 2000 years old.'
-            }
-            
-        }
+        booksArray: null
     }
 
     componentDidMount () {
@@ -47,10 +25,7 @@ class BooksContainer extends Component{
             }
         })
         .catch(err => console.log(err));
-        console.log(booksArray)
-        console.log(booksArray)
         this.setState({booksArray: booksArray});
-
     }
     
     render(){
@@ -59,28 +34,29 @@ class BooksContainer extends Component{
             <div></div>
         )
 
-/*         if(this.props.showBooks){
+         if(this.props.showBooks){
 
              books = (
                 <div className={classes.wrapper}>
-                    {this.state.booksArray.map(book =>(
-                    <div className={classes.booksContainer}>
+                    {this.state.booksArray.map((book, index) =>(
+                    <div className={classes.booksContainer}
+                    key = {index + Math.random() * 1000}>
                         <div className={classes.booksContainerInfo}>
-                            <h2>{book.title}</h2>
-                            <p>{book.author}</p>
-                            <p>Julkaisuvuosi {book.publisyear}</p>
-                            <p>Luettu {book.read}</p>
-                            <p>"{book.comment}"</p>
+                            <h2>{book.book.title}</h2>
+                            <p>{book.book.author}</p>
+                            <p>Julkaisuvuosi {book.book.publisyear}</p>
+                            <p>Luettu {book.book.read}</p>
+                            <p>"{book.book.comment}"</p>
                         </div>
                         <div className={classes.booksContainerPicture}>
-                            <Perttu1/>
+                            <img src={book.image} alt=""></img>
                         </div>
                     </div>
                     ))}
                 </div> 
              );
-        } */
-
+        }  
+/* 
           if(this.props.showBooks){ 
             books = (
             <div className={classes.wrapper}>
@@ -148,18 +124,36 @@ class BooksContainer extends Component{
                         <h2>Faktojen maailma</h2>
                         <p>Hans Rosling</p>
                         <p>Julkaisuvuosi 2018</p>
-                        <p>Luettu 12.02.2021 </p>
+                        <p>Luettu 10.02.2021 </p>
                         <p>
-                            "."
+                            "Ei sitä osannu edes kuvitella kuinka väärässä oma maailmankuva olikaan. Todella inspiroiva kirja, jonka luettua katsoo maailmaa taas hieman eri silmin.
+                            Mielestäni jokaisen tulisi lukea Hans kyseisen kirjan, sillä aivan kuten Hans Rosling kirjassaan todisti, lähestulkoon kaikilla ihmisillä maailmassa on vanhentunutta
+                            tietoa maailmastamme ja sen tilasta."
                         </p>
                     </div>
                     <div className={classes.booksContainerPicture}>
                         <Kirja5/>
                     </div>
                 </div>
+                <div className={classes.booksContainer}>
+                    <div className={classes.booksContainerInfo}>
+                        <h2>Yksi elämä, yksi planeetta</h2>
+                        <p>David Attenborough</p>
+                        <p>Julkaisuvuosi 2020</p>
+                        <p>Luettu 15.02.2021 </p>
+                        <p>
+                            "Kirja kertoo karun totuuden planeettamme ja sen luennon tilasta. Kirjassa David on havainnollistanut hyvin sen kuinka maailma on muuttunut yhden 
+                            ihmiselämän aikana, sillä kirjassa hän kertoo kuinka hän on nähnyt maailman muuttuvan oman elämänsä aikana. Alussa kirja luo todella dystooppisen 
+                            kuvan tulevaisuudestamme, mutta kirjan lopussa valetaan jälleen uskoa tulevaisuuden suhteen."
+                        </p>
+                    </div>
+                    <div className={classes.booksContainerPicture}>
+                        <Kirja6/>
+                    </div>
+                </div>
             </div>
         );
-        } 
+        }  */
 
         return(
             <div>

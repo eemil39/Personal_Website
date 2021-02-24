@@ -54,6 +54,9 @@
     .emailBox .emailLink a:hover{
         background-color: var(--color-title);
     }
+    .SomeIcons a{
+        margin: 20px;
+    }
 
 }
 
@@ -175,19 +178,8 @@
         font-weight: bold;
         height: 45;
     }
-    .emailBox .emailLink a:hover{
-        background-color: rgb(110, 179, 122);
+    .SomeIcons a{
+        margin: 10px;
+        line-height: 70px;
     }
-    .MainPagePictureMobile{
-        display: grid;
-        position: relative;
-        margin-top: 100px;
-        background-image: url(../../Assets/Images/MainPagePicture3.jpg);
-        background-color: rgb(68, 117, 163);
-        background-blend-mode: lighten;
-        background-size: 100%;
-        height: 32vw;
-        background-repeat: no-repeat;
-    }
-
 }
