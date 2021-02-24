@@ -227,7 +227,6 @@ class ProjectsPageContainer extends Component{
                            Ylläolvessa kuvassa näkyy "bussikusi" juomapelin bussikuski kierros. Tässä pelin e-versio osottutuu ylivoimaiseki verrattuna oikeilla korteilla pelattuun, 
                             sillä pelaaja voi pelata kierroksia todella nopeaan tahtiin, eikä kortteja tarvitse jakaa uudestaan jokaisen kierroksen jälkeen, sillä tietokone tekee sen puolestasi. 
                         </p>}
-  
 
                     </div>
                 </div>

@@ -6,6 +6,11 @@ import phone from '../../Assets/png/png2/001-call.png';
 import email from '../../Assets/png/png2/002-email.png';
 import name from '../../Assets/png/png2/name.png';
 
+import Linkedin from '../../Assets/png/png1/001-linkedin.png';
+import Facebook from '../../Assets/png/png1/002-facebook.png';
+import Instagram from '../../Assets/png/png1/003-instagram.png';
+import Twitter from '../../Assets/png/png1/004-twitter.png';
+
 class ContactPageContainer extends Component{
     
     componentDidMount() {
@@ -30,7 +35,7 @@ class ContactPageContainer extends Component{
                     </div>
                     <div className={classes.contactBox1}>
                         <h2>{this.props.language === 'Fin' ? 'Etu- ja sukunimi:' : this.props.language === 'Eng' ? 'Name:' :this.props.language === 'Swe' ? 'Namn:' : 'Etu- ja sukunimi:' }</h2>
-                        <h2>{this.props.language === 'Fin' ? 'Puhelinnumero:' : this.props.language === 'Eng' ? 'Phone number:' :this.props.language === 'Swe' ? 'Telefonnummer:' : 'Puhelinnumero' }</h2>
+                        <h2>{this.props.language === 'Fin' ? 'Puhelinnumero:' : this.props.language === 'Eng' ? 'Phone number:' :this.props.language === 'Swe' ? 'Telefon:' : 'Puhelinnumero' }</h2>
                         <h2>{this.props.language === 'Fin' ? 'Sähköpostiosoite:' : this.props.language === 'Eng' ? 'Email:' :this.props.language === 'Swe' ? 'E-post:' : 'Sähköpostiosoite:' }</h2>
                     </div>
                     <div className={classes.contactBox2}>
@@ -74,8 +79,15 @@ class ContactPageContainer extends Component{
                         : <a href="mailto:eemil_vaha@hotmail.com">Lähetä sähköposti</a>}
                     </div>
                 </div>
-                <h1>{this.props.language === 'Fin' ? 'Sosiaalinen media' : this.props.language === 'Eng' ? 'Social media' :this.props.language === 'Swe' ? 'Sociala medier' : 'Sosiaalinen media' }</h1>
+                <h1>{this.props.language === 'Fin' ? 'Seuraa somessa' : this.props.language === 'Eng' ? 'Follow me' :this.props.language === 'Swe' ? 'Följ mig' : 'Sosiaalinen media' }</h1>
+                <div className={classes.SomeIcons}>
+                    <a href="https://www.facebook.com/eemil.vaha"><img src={Facebook} alt=""></img></a>
+                    <a href="https://twitter.com/EemilVh"><img src={Twitter} alt=""></img></a>
+                    <a href="https://www.instagram.com/eemilvahaa/"><img src={Instagram} alt=""></img></a>
+                    <a href="https://www.linkedin.com/in/eemil-v%C3%A4h%C3%A4-3ba878196/"><img src={Linkedin} alt=""></img></a>
+                </div>            
             </div>
+
 
         );
     }

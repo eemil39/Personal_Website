@@ -8,6 +8,7 @@ import Ohjelmointi from '../../Components/Backgrounds/Education/Ohelmointi';
 import Button from '../../UI/Buttons/Button';
 import BooksContainer from '../../Components/BooksContainer/BooksContainer';
 import Shakki from '../../Components/Backgrounds/Education/Shakki';
+import Blockchain from '../../Components/Backgrounds/Education/Blockchain';
 import Sali from '../../Components/Backgrounds/Education/Sali';
 
 class HobbiesPageContainer extends Component{
@@ -17,7 +18,7 @@ class HobbiesPageContainer extends Component{
     
     
     state = {
-        showBooks: true,
+        showBooks: false,
     }
 
     showBooks = () => {
@@ -145,7 +146,33 @@ class HobbiesPageContainer extends Component{
                                 {this.props.language === 'Fin' ?      
                                 <p>
                                     Mielenkiintoinen peli jota tulee pelattua aina silloin tällöin. Pelaamiseen ei tarvitse edes pelikaveria, sillä chess.com
+                                    sovellus on erittäin suosittu ja vastustajien kirjo on loputon. 
+                                </p>
+                                : this.props.language === 'Eng' ?     
+                                <p>
+                                    
+                                </p>
+                                : this.props.language === 'Swe' ?     
+                                <p>
+                                    
+                                </p>
+                                :    
+                                <p>
+                                    Mielenkiintoinen peli jota tulee pelattua aina silloin tällöin. Pelaamiseen ei tarvitse edes pelikaveria, sillä chess.com
                                     sovellus on erittäin suosittu ja vastustajien kirjo on loputon.
+                                </p>}
+                        </div>
+                    </div>
+                    <div className={classes.hobbiesInfo4}>
+                        <div className={classes.hobbiesInfoPic}>
+                            <Blockchain/>
+                        </div>
+                        <div className={classes.hobbiesInfoBox}>
+                            <h3>{this.props.language === 'Fin' ? 'Lohkoketju teknologia' : this.props.language === 'Eng' ? 'Chainblock technology' :this.props.language === 'Swe' ? 'Blockkedja teknologi' : 'Lohkoketjut' }</h3>
+                                
+                                {this.props.language === 'Fin' ?      
+                                <p>
+                                    Mielenkiintoinen teknologia, jolla on paljon potentiaalia. 
                                 </p>
                                 : this.props.language === 'Eng' ?     
                                 <p>

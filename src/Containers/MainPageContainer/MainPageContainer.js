@@ -61,10 +61,7 @@ class MainPageContainer extends Component{
                             </p>
                         : this.props.language === 'Swe' ?    
                             <p>
-                                Olen {this.getAge("1997-05-27")}-vuotias automaatio ja tietotekniikan opiskelija. Opiskelen jo kolmatta vuotta,
-                                joten ajattelin, että nyt on sopiva aika luoda omat nettisivut. Loin tämän sivuston, jotta voisin esittää samat asiat kun ansioluettelostani, mutta hieman
-                                luovemalla tavalla. Tarkoitukseni on luoda sivusto, mikä kuvastaa minua ja taitojani parhaalla mahdollisella tavalla. Toivottavasti sivuston visuaalinen ulosanti 
-                                miellyttää myös sinuna ja työpanokseni näkyy lopputuloksessa. Tavoitteenani on, että voisin vielä joskus aloittaa tämän tekstin sanoilla, "I am a frontend developer...".
+                                Jag är {this.getAge("1997-05-27")} gammal
                             </p>
                         :   
                             <p>

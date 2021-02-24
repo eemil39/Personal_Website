@@ -54,6 +54,9 @@
     .emailBox .emailLink a:hover{
         background-color: var(--color-title);
     }
+    .SomeIcons a{
+        margin: 20px;
+    }
 
 }
 
@@ -174,5 +177,9 @@
         padding: 10px;
         font-weight: bold;
         height: 45;
+    }
+    .SomeIcons a{
+        margin: 10px;
+        line-height: 70px;
     }
 }

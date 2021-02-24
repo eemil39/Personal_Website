@@ -26,7 +26,6 @@ class NavigationItems extends Component {
         if(this.props.language === 'Eng'){
             content = (
             <ul className={classes.NavigationItems}>
-                { this.props.isAuthenticated ? <NavigationItem link="/logout"></NavigationItem> : <div></div>}
                 <NavigationItem link="/"  exact>Home</NavigationItem>
                 <NavigationItem link="/curriculum-vitae">Portfolio</NavigationItem>
                 <NavigationItem link="/yhteystiedot">Contact</NavigationItem>
@@ -42,7 +41,6 @@ class NavigationItems extends Component {
         if(this.props.language === 'Fin'){
             content = (
             <ul className={classes.NavigationItems}>
-                { this.props.isAuthenticated ? <NavigationItem link="/logout"></NavigationItem> : <div></div>}
                 <NavigationItem link="/"  exact>Etusivu</NavigationItem>
                 <NavigationItem link="/curriculum-vitae">Portfolio</NavigationItem>
                 <NavigationItem link="/yhteystiedot">Yhteystiedot</NavigationItem>
@@ -58,7 +56,6 @@ class NavigationItems extends Component {
         if(this.props.language === 'Swe'){
             content = (
             <ul className={classes.NavigationItems}>
-                { this.props.isAuthenticated ? <NavigationItem link="/logout"></NavigationItem> : <div></div>}
                 <NavigationItem link="/"  exact>Framsida</NavigationItem>
                 <NavigationItem link="/curriculum-vitae">Portfölj</NavigationItem>
                 <NavigationItem link="/yhteystiedot">Kontakta</NavigationItem>

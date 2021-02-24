@@ -128,7 +128,7 @@ class EducationPageContainer extends Component{
                             : this.props.language === 'Swe' ? <a href="https://www.spsu.fi/">Tikkakoski Air Force Academy</a>
                             : <a href="https://ilmavoimat.fi/ilmasotakoulu">Tikkakosken Ilmasotakoulu</a>}
                         </div>
-                        <p>{this.props.language === 'Fin' ? 'Lentotekninen aliupseerikurssi' : this.props.language === 'Eng' ? 'Flight technical NCO training' :this.props.language === 'Swe' ? 'Flygteknisk underofficerskurs' : 'Lentotekninen aliupseerikurssi' }</p>
+                        <p>{this.props.language === 'Fin' ? 'Lentotekninen aliupseerikurssi' : this.props.language === 'Eng' ? 'Flight technical Reserve Non-Commissioned Officer training' :this.props.language === 'Swe' ? 'Flygteknisk underofficerskurs' : 'Lentotekninen aliupseerikurssi' }</p>
                         <p>{this.props.language === 'Fin' ? 'Apumekaanikko' : this.props.language === 'Eng' ? 'Assistant mechanic' :this.props.language === 'Swe' ? 'Hjälp mekaniker' : 'Apumekaanikko' }</p>
                     </div>
                     <div className={classes.Logo}>

@@ -134,8 +134,7 @@ class ExperiencePageContainer extends Component{
                         {this.props.language === 'Fin' ? 
                             <p>
                                 Vuonna 2016 aloitin esimmäistä kertaa työsekentelyn Rakennus Avantilla lukion jälkeen. Tuolloin minulla oli yhden kesän kokemus raksalta, joten 
-                                työtehtäväni kuului lähinnä maalaamista ja muita vastaavista työtehtäviä. Täytynee kuitenkin erikseen mainita, että sain näppärä sormisena kaverina listoittaa silloisen 
-                                Nurmeksessa sijaitsevan kohteen toimistotilat.
+                                työtehtäväni kuului lähinnä maalaamista ja muita vastaavista työtehtäviä.
                             </p>
                         : this.props.language === 'Eng' ?    
                             <p>
