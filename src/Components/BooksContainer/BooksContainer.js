@@ -4,7 +4,6 @@ import axios from '../../axios-books';
 import { connect } from 'react-redux';
 import classes from './BooksContainer.module.css';
 
-import BooksForm from '../Form/BooksForm';
 
 
 class BooksContainer extends Component{
@@ -158,7 +157,6 @@ class BooksContainer extends Component{
         return(
             <div>
                 {books}
-                {this.props.isAuthenticated ? <BooksForm/>: <div></div>}
             </div>
         );
     }

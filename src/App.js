@@ -17,6 +17,7 @@ import ContactPage from './Containers/Contact/ContactPageContainer';
 import Auth from './Containers/Auth/Auth';
 import Logout from './Containers/Auth/Logout/Logout';
 import Footer from './UI/Footer/Footer';
+import AdminView from './Containers/Admin/Admin';
 
 
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
 
     let routes = (
         <Switch>
+          <Route path="/admin-edit" component={AdminView} />
           <Route path="/curriculum-vitae" component={Portfolio} />
           <Route path="/yhteystiedot" component={ContactPage} />
           <Route path="/freetime" component={HobbiesPage} />

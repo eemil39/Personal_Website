@@ -9,9 +9,7 @@
     align-items: center;
     border: none;
 }
-.NavigationItems .NavItems{
-    margin-left: auto;
-}
+
 
 
 @media (min-width: 1100px) {

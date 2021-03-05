@@ -26,45 +26,46 @@ class NavigationItems extends Component {
         if(this.props.language === 'Eng'){
             content = (
             <ul className={classes.NavigationItems}>
+                { this.props.isAuthenticated 
+                    ? <NavigationItem link="/admin-edit">Settings</NavigationItem>
+                    : <NavigationItem link="/admin">Login</NavigationItem>}
                 <NavigationItem link="/"  exact>Home</NavigationItem>
                 <NavigationItem link="/curriculum-vitae">Portfolio</NavigationItem>
                 <NavigationItem link="/yhteystiedot">Contact</NavigationItem>
                 <Language click={this.changeLanguageToFin}><img src={Fin} alt=""></img></Language>
                 <Language click={this.changeLanguageToEng}><img src={UK} alt=""></img></Language>
                 <Language click={this.changeLanguageToSwe}><img src={Swe} alt=""></img></Language>
-                { this.props.isAuthenticated 
-                    ? <NavigationItem link="/logout">Logout</NavigationItem>
-                    : <div></div>}
+    
             </ul>
             );
         }
         if(this.props.language === 'Fin'){
             content = (
             <ul className={classes.NavigationItems}>
+                { this.props.isAuthenticated 
+                    ? <NavigationItem link="/admin-edit">Asetukset</NavigationItem>
+                    : <NavigationItem link="/admin">Kirjaudu</NavigationItem>}
                 <NavigationItem link="/"  exact>Etusivu</NavigationItem>
                 <NavigationItem link="/curriculum-vitae">Portfolio</NavigationItem>
                 <NavigationItem link="/yhteystiedot">Yhteystiedot</NavigationItem>
                 <Language click={this.changeLanguageToFin}><img src={Fin} alt=""></img></Language>
                 <Language click={this.changeLanguageToEng}><img src={UK} alt=""></img></Language>
                 <Language click={this.changeLanguageToSwe}><img src={Swe} alt=""></img></Language>
-                { this.props.isAuthenticated 
-                    ? <NavigationItem link="/logout">Logout</NavigationItem>
-                    : <div></div>}
             </ul>
             );
         }
         if(this.props.language === 'Swe'){
             content = (
             <ul className={classes.NavigationItems}>
+                { this.props.isAuthenticated 
+                    ? <NavigationItem link="/admin-edit">Settingar</NavigationItem>
+                    : <NavigationItem link="/admin">Logga in</NavigationItem>}
                 <NavigationItem link="/"  exact>Framsida</NavigationItem>
                 <NavigationItem link="/curriculum-vitae">Portfölj</NavigationItem>
                 <NavigationItem link="/yhteystiedot">Kontakta</NavigationItem>
                 <Language click={this.changeLanguageToFin}><img src={Fin} alt=""></img></Language>
                 <Language click={this.changeLanguageToEng}><img src={UK} alt=""></img></Language>
                 <Language click={this.changeLanguageToSwe}><img src={Swe} alt=""></img></Language>
-                { this.props.isAuthenticated 
-                    ? <NavigationItem link="/logout">Logga ut</NavigationItem>
-                    : <div></div>}
             </ul>
             );
         }

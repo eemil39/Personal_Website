@@ -29,6 +29,8 @@
     margin: 0;
     padding: 0;
     z-index: -2;
+    color: transparent;
+    text-shadow: 0 0 0 black;
   }
 
 }

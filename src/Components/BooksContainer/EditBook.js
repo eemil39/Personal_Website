@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 
-import classes from './BooksForm.module.css';
+import classes from './EditBook.module.css';
+import Backdrop from '../../UI/Backdrop/Backdrop';
 import Input from '../../UI/Input/Input';
 import Button from '../../UI/Buttons/Button';
-import axios from '../../axios-books';
 import { updateObject, checkValiditation } from '../../shared/uitility';
-import { connect } from 'react-redux';
 import { storage } from '../../firebase/index'
+import axios from '../../axios-books';
 
+class EditBook extends Component{
 
-class BooksForm extends Component {
-    
     state = {
         booksForm: {
             title: {
@@ -73,7 +72,7 @@ class BooksForm extends Component {
                 elementType: 'textarea',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'Kommentti'
+                    placeholder: ''
                 },
                 value: '',
                 validation: {
@@ -89,9 +88,10 @@ class BooksForm extends Component {
         url: null,
         imageUploaded: false,
         disabled: true,
-        missingInfo: false
+        missingInfo: false,
     }
 
+ 
     inputChangedHandler = (event, inputIdentifier) => {
          console.log(inputIdentifier)
         const updatedFormElement = updateObject(this.state.booksForm[inputIdentifier], {
@@ -109,8 +109,33 @@ class BooksForm extends Component {
             formIsValid = updatedBooksForm[inputIdentifier].valid && formIsValid;
         }
         this.setState({booksForm: updatedBooksForm, formIsValid: formIsValid});
+    }
+    
+    updateInputs = () => {
+
+        const book = {
+            ...this.props.book
+        }
+
+        for( let key in this.state.booksForm){
+            const updatedFormElement = updateObject(this.state.booksForm[key], {
+                value: book.book[key]
+            });
+           
+            const updatedBooksForm = updateObject(this.state.booksForm, {
+                [key]: updatedFormElement
+            });
+
+            let formIsValid = true;
+            for (let key in updatedBooksForm) {
+                formIsValid = updatedBooksForm[key].valid && formIsValid;
+            }
+            this.setState({booksForm: updatedBooksForm, formIsValid: formIsValid});
+        }
         
     }
+
+
     fileSelectedHandler = event => {
         this.setState({selectedFile: event.target.files[0]});
         this.setState({imageUploaded: true})
@@ -164,11 +189,15 @@ class BooksForm extends Component {
     }
 
     render () {
+
         const formElementsArray = [];
         let missingInfoWarning = '';
+        let content = '';
         if (this.state.missingInfo){
             missingInfoWarning = <div className={classes.warning}>Anna kaikki tarvittavat tiedot!</div>;
         }
+
+    
             
         for (let key in this.state.booksForm) {
             formElementsArray.push({
@@ -176,6 +205,13 @@ class BooksForm extends Component {
                 config: this.state.booksForm[key]
             });
         }
+
+        const book = {
+            ...this.props.book
+        }
+
+
+
         let form = (
             <div>   
                 <form onSubmit={this.saveInformationToFireBase}>
@@ -192,38 +228,34 @@ class BooksForm extends Component {
                 ))}
                 {missingInfoWarning}
                     <Button>Tallenna</Button>
-    
                 </form>  
-
             </div>
         );
 
-        return (
-                <div className={classes.ContactData}>
-                    <div className={classes.Title}>
-                        <h4>Anna kirjan tiedot</h4>
-                    </div>
-                    <div className={classes.ImageUpload}>
-                        <div className={classes.InputElement}>
-                            <input type="file" onChange={this.fileSelectedHandler}/>
+       if (this.props.show){
+           content = (
+               <div>
+                    <div className={classes.Form}>
+                        <div className={classes.Title}>
+                            <h4>Muokkaa kirjan tietoja</h4>
                         </div>
+                        <div className={classes.ImageUpload}>
+                            <div className={classes.InputElement}>
+                                <input type="file" onChange={this.fileSelectedHandler}/>
+                            </div>
+                        </div>
+                        {form}
                     </div>
-                    {form}
-                </div>
+               </div>
+           );
+       }
+
+        return (
+            <div>
+               {content}
+            </div>
         );
     }
 }
 
-const mapStateToProps = state => {
-    return {
-        token: state.auth.token,
-    }
-}
-
-const mapDispatchToProps = dispatch => {
-    return {
-        
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(BooksForm);
+export default EditBook;

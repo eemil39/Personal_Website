@@ -8,7 +8,7 @@
     }
   }
   
-.ContactData{
+.Form{
     margin: 20px auto;
     width: 90%;
     text-align: center;
@@ -17,7 +17,7 @@
     
 }
 
-.ContactData .Title h4{
+.Form .Title h4{
     text-align: center;
     padding: 20px 20px;
     margin: 0;
@@ -25,12 +25,12 @@
     font-weight: 500;
 }
 
-.ContactData .ImageUpload{
+.Form .ImageUpload{
     height: 100px;
     padding: 20px 20px;
 
 }
-.ContactData .ImageUpload .InputElement{
+.Form .ImageUpload .InputElement{
     padding: 10px;
 }
 
@@ -44,16 +44,19 @@
 
 @media (min-width: 600px) {
 
-    .ContactData{
+    .Form{
+        position: fixed;
+        top: 100px;
+        border-radius: 10px;
+        z-index: 1000;
         margin: 20px auto;
-        width: 100%;
+        width: 60%;
         text-align: center;
         box-sizing: border-box;
-        border-bottom: solid 1px #ccc;
-        border-top: solid 1px #ccc;
+        background-color: var(--color-box);
     }
     
-    .ContactData .Title h4{
+    .Form .Title h4{
         text-align: center;
         padding: 20px 20px;
         margin: 0;
@@ -61,12 +64,12 @@
         font-weight: 500;
     }
     
-    .ContactData .ImageUpload{
+    .Form .ImageUpload{
         height: 100px;
         padding: 20px 20px;
     
     }
-    .ContactData .ImageUpload .InputElement{
+    .Form .ImageUpload .InputElement{
         padding: 10px;
     }
 }

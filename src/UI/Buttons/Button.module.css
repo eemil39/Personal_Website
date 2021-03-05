@@ -30,6 +30,31 @@
     height: 45;
 
 }
+.EditButton{
+    width: auto;
+    height: auto;
+    border: none;
+    outline: none;
+}
+.settingsButton{
+    font-weight: 500;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    color: transparent;
+    text-shadow: 0 0 0 black;
+}
+
+.settingsButton2{
+    font-weight: 500;
+    padding: 5px 10px;
+    color: white;
+    background-color:  var(--color-title);
+    text-decoration: none;
+    max-width: 100px;
+    max-height: 25px;
+}
 
 .ToolbarButton{
     border: none;
