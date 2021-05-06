@@ -10,7 +10,7 @@
     align-items: center;
     box-sizing: border-box;
     z-index: 1000;
-    box-shadow:  inset 0px -1px 5px 0px rgba(167, 164, 163, 0.5); 
+    /* box-shadow:  inset 0px -1px 5px 0px rgba(167, 164, 163, 0.5);  */
 }
 
 .Toolbar nav{

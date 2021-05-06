@@ -112,7 +112,7 @@ class Auth extends Component{
                     {form}
                 <Button>Kirjaudu sisään</Button>
                 </form>
-{/*                 <Button 
+{/*             <Button 
                 click={this.switchAuthModeHandler}
                 btnType="Danger">Switch to {this.state.isSignup ? 'Kirjaudu sisään' : 'Rekisteröidy'}</Button> */}
             </div>
